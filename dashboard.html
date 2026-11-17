@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aspirant Dashboard | Sankalp Civil Services Academy</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="dashboard-shell">
+    <!-- Sidebar (Left Offcanvas on Mobile/Tablet, Fixed Sidebar on Desktop) -->
+    <aside class="dashboard-sidebar offcanvas-lg offcanvas-start" tabindex="-1" id="dashSidebarOffcanvas" aria-labelledby="dashSidebarLabel">
+      <div class="offcanvas-header d-lg-none px-2 pb-3 border-bottom border-light border-opacity-10">
+        <a href="index.html" class="brand-lockup" id="dashSidebarLabel">
+          <span class="brand-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.5L14.5 6.5H9.5L12 2.5Z" fill="currentColor"/><path d="M6.5 8.5H17.5M8 8.5V16M12 8.5V16M16 8.5V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4.5 17.5C7 16.2 9.5 16.2 12 17.5C14.5 16.2 17 16.2 19.5 17.5V20C17 18.8 14.5 18.8 12 20C9.5 18.8 7 18.8 4.5 20V17.5Z" fill="currentColor"/></svg></span>
+          <span>
+            <span class="brand-title d-block">Sankalp Portal</span>
+            <span class="brand-sub">Aspirant Portal</span>
+          </span>
+        </a>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" data-bs-target="#dashSidebarOffcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body d-flex flex-column p-0 w-100">
+        <a href="index.html" class="brand-lockup mb-4 px-2 d-none d-lg-flex">
+          <span class="brand-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.5L14.5 6.5H9.5L12 2.5Z" fill="currentColor"/><path d="M6.5 8.5H17.5M8 8.5V16M12 8.5V16M16 8.5V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4.5 17.5C7 16.2 9.5 16.2 12 17.5C14.5 16.2 17 16.2 19.5 17.5V20C17 18.8 14.5 18.8 12 20C9.5 18.8 7 18.8 4.5 20V17.5Z" fill="currentColor"/></svg></span>
+          <span>
+            <span class="brand-title d-block">Sankalp Portal</span>
+            <span class="brand-sub">Aspirant Portal</span>
+          </span>
+        </a>
+
+        <nav class="dashboard-sidebar-nav flex-grow-1 mt-3 mt-lg-0" aria-label="Dashboard Navigation">
+          <button type="button" class="dash-nav-btn active" data-dash-target="overview"><i class="bi bi-grid-1x2-fill"></i> Overview</button>
+          <button type="button" class="dash-nav-btn" data-dash-target="courses"><i class="bi bi-book-half"></i> My Courses</button>
+          <button type="button" class="dash-nav-btn" data-dash-target="materials"><i class="bi bi-file-earmark-text-fill"></i> Study Materials</button>
+          <button type="button" class="dash-nav-btn" data-dash-target="mocks"><i class="bi bi-stopwatch-fill"></i> Mock Tests</button>
+          <button type="button" class="dash-nav-btn" data-dash-target="results"><i class="bi bi-bar-chart-fill"></i> Test Results</button>
+          <button type="button" class="dash-nav-btn" data-dash-target="schedule"><i class="bi bi-calendar-event-fill"></i> Exam Schedule</button>
+          <button type="button" class="dash-nav-btn" data-dash-target="progress"><i class="bi bi-graph-up"></i> My Progress</button>
+          <button type="button" class="dash-nav-btn" data-dash-target="profile"><i class="bi bi-person-circle"></i> My Profile</button>
+          <button type="button" class="dash-nav-btn" data-dash-target="notifications"><i class="bi bi-bell-fill"></i> Notifications</button>
+          <button type="button" class="dash-nav-btn text-warning mt-lg-3" data-dash-target="logout"><i class="bi bi-box-arrow-left"></i> Logout</button>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-main">
+      <!-- Compact Dashboard Top Navbar (No Brand Name on Mobile, Hamburger Left + 3 Icons Right) -->
+      <header class="dashboard-topbar">
+        <button class="btn btn-outline-light btn-sm d-lg-none border-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#dashSidebarOffcanvas" aria-controls="dashSidebarOffcanvas" aria-label="Open dashboard menu">
+          <i class="bi bi-list fs-5"></i>
+        </button>
+        <div class="d-flex align-items-center gap-2 ms-auto">
+          <button type="button" class="rtl-toggle-btn" id="rtlToggleBtn" aria-label="Switch to RTL layout"><i class="bi bi-arrows"></i></button>
+          <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <button type="button" class="login-icon-btn border-0" aria-label="My Profile" title="My Profile" onclick="document.querySelector('[data-dash-target=\'profile\']').click();">
+            <i class="bi bi-person-fill"></i>
+          </button>
+        </div>
+      </header>
+
+      <div class="dashboard-body">
+        <div class="mb-4">
+          <h1 class="font-serif fw-bold fs-3 mb-0">Welcome, <span data-user-name>Aarav Kulkarni</span></h1>
+        </div>
+
+      <!-- 1. OVERVIEW -->
+      <section class="dash-panel active" id="panel-overview">
+        <div class="row g-3 mb-4">
+          <div class="col-md-3 col-sm-6">
+            <div class="dash-stat-tile h-100 d-flex flex-column justify-content-between">
+              <span class="small text-muted">Course Completion</span>
+              <div class="font-serif fs-2 fw-bold text-indigo">68%</div>
+              <div class="progress mt-2" style="height:6px;"><div class="progress-bar bg-indigo" style="width:68%"></div></div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="dash-stat-tile h-100 d-flex flex-column justify-content-between">
+              <span class="small text-muted">Study Hours (Week)</span>
+              <div class="font-serif fs-2 fw-bold text-indigo">44.5 hrs</div>
+              <span class="small text-indigo">+4.2 hrs vs last week</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="dash-stat-tile h-100 d-flex flex-column justify-content-between">
+              <span class="small text-muted">Upcoming Mock</span>
+              <div class="font-serif fs-5 fw-bold text-indigo mt-1">GS-II Polity Full Test</div>
+              <span class="small text-muted">Sunday &bull; 9:30 AM</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="dash-stat-tile h-100 d-flex flex-column justify-content-between">
+              <span class="small text-muted">Mains Answers Checked</span>
+              <div class="font-serif fs-2 fw-bold text-indigo">84</div>
+              <span class="small text-muted">Avg Score: 11.4 / 15</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="p-4 rounded-4 bg-white border h-100">
+              <h5 class="font-serif fw-bold mb-3">Recent Academic Activity</h5>
+              <ul class="list-group list-group-flush small">
+                <li class="list-group-item d-flex justify-content-between px-0"><span>Completed Module: Parliamentary Committees (GS-II)</span><span class="text-muted">2 hrs ago</span></li>
+                <li class="list-group-item d-flex justify-content-between px-0"><span>Submitted Daily Answer: Cooperative Federalism (250 words)</span><span class="text-muted">Yesterday</span></li>
+                <li class="list-group-item d-flex justify-content-between px-0"><span>Prelims Sectional Test #14 Score: 118 / 200</span><span class="text-muted">3 days ago</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="p-4 rounded-4 bg-navy text-white h-100">
+              <span class="small text-gold fw-bold text-uppercase">Mentor Note</span>
+              <h5 class="font-serif fw-bold mt-2">Focus on GS-III Economic Survey Citations</h5>
+              <p class="small text-white-50 mb-3">Review Chapter 4 on Fiscal Consolidation before Sunday's diagnostic test.</p>
+              <button type="button" class="btn btn-gold btn-sm" onclick="document.querySelector('[data-dash-target=\'mocks\']').click();">Launch Mock Test</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. MY COURSES -->
+      <section class="dash-panel" id="panel-courses">
+        <h4 class="font-serif fw-bold mb-3">Enrolled Courses</h4>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-4 rounded-4 bg-white border h-100">
+              <span class="badge bg-warning text-dark mb-2">Active</span>
+              <h5 class="font-serif fw-bold">Integrated GS Foundation (Papers I&ndash;IV)</h5>
+              <p class="small text-muted">18 Modules &bull; 12 Completed</p>
+              <div class="progress mb-3" style="height:8px;"><div class="progress-bar bg-indigo" style="width:68%"></div></div>
+              <button type="button" class="btn btn-violet btn-sm" onclick="window.showToast('Resuming GS-II Lecture: Constitutional Amendments');">Continue Learning</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-4 rounded-4 bg-white border h-100">
+              <span class="badge bg-warning text-dark mb-2">Test Series</span>
+              <h5 class="font-serif fw-bold">Prelims &amp; Mains Test Series 2027</h5>
+              <p class="small text-muted">40 Tests &bull; 14 Attempted</p>
+              <div class="progress mb-3" style="height:8px;"><div class="progress-bar bg-indigo" style="width:35%"></div></div>
+              <button type="button" class="btn btn-outline-navy-pill btn-sm" onclick="document.querySelector('[data-dash-target=\'mocks\']').click();">Open Test Portal</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. STUDY MATERIALS -->
+      <section class="dash-panel" id="panel-materials">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-3">
+          <h4 class="font-serif fw-bold mb-0">Study Materials Repository</h4>
+          <div class="d-flex gap-2">
+            <input type="search" class="form-control form-control-sm" id="materialSearchInput" placeholder="Search notes...">
+            <select class="form-select form-select-sm" id="materialSubjectFilter">
+              <option value="all">All Subjects</option>
+              <option value="Polity">Polity</option>
+              <option value="Economy">Economy</option>
+              <option value="History">History</option>
+              <option value="Ethics">Ethics</option>
+            </select>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6" data-material-item data-subject="Polity" data-title="Indian Constitution Fundamental Rights Notes">
+            <div class="p-3 rounded-3 bg-white border d-flex justify-content-between align-items-center">
+              <div><span class="badge bg-light text-dark border mb-1">Polity</span><h6 class="fw-bold mb-0">Fundamental Rights &amp; Writs Compendium</h6></div>
+              <button type="button" class="btn btn-sm btn-violet" onclick="window.showToast('Downloading Polity_Writs_Summary.pdf');"><i class="bi bi-download"></i></button>
+            </div>
+          </div>
+          <div class="col-md-6" data-material-item data-subject="Economy" data-title="Monetary Policy & RBI Framework Brief">
+            <div class="p-3 rounded-3 bg-white border d-flex justify-content-between align-items-center">
+              <div><span class="badge bg-light text-dark border mb-1">Economy</span><h6 class="fw-bold mb-0">Monetary Policy &amp; Inflation Targeting</h6></div>
+              <button type="button" class="btn btn-sm btn-violet" onclick="window.showToast('Downloading Economy_MPC_Brief.pdf');"><i class="bi bi-download"></i></button>
+            </div>
+          </div>
+          <div class="col-md-6" data-material-item data-subject="History" data-title="Modern Indian History Gandhian Era">
+            <div class="p-3 rounded-3 bg-white border d-flex justify-content-between align-items-center">
+              <div><span class="badge bg-light text-dark border mb-1">History</span><h6 class="fw-bold mb-0">Freedom Movement Chronology (1915&ndash;1947)</h6></div>
+              <button type="button" class="btn btn-sm btn-violet" onclick="window.showToast('Downloading Modern_History_Timeline.pdf');"><i class="bi bi-download"></i></button>
+            </div>
+          </div>
+          <div class="col-md-6" data-material-item data-subject="Ethics" data-title="GS-IV Ethics Case Study Frameworks">
+            <div class="p-3 rounded-3 bg-white border d-flex justify-content-between align-items-center">
+              <div><span class="badge bg-light text-dark border mb-1">Ethics</span><h6 class="fw-bold mb-0">GS-IV Administrative Case Study Workbook</h6></div>
+              <button type="button" class="btn btn-sm btn-violet" onclick="window.showToast('Downloading Ethics_Case_Studies.pdf');"><i class="bi bi-download"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. MOCK TESTS -->
+      <section class="dash-panel" id="panel-mocks">
+        <h4 class="font-serif fw-bold mb-3">Prelims &amp; GS Mock Tests</h4>
+        <div class="row g-3 mb-4">
+          <div class="col-md-6">
+            <div class="p-4 rounded-4 bg-white border">
+              <span class="small text-indigo fw-bold">GS Paper I &bull; 5 Questions</span>
+              <h5 class="font-serif fw-bold mt-1">Polity &amp; Economy Quick Diagnostic</h5>
+              <p class="small text-muted">Duration: 05:00 mins &bull; Instant Evaluation</p>
+              <button type="button" class="btn btn-gold btn-sm" data-start-mock="Polity &amp; Economy Quick Diagnostic">Start Test</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-4 rounded-4 bg-white border">
+              <span class="small text-indigo fw-bold">Prelims Simulator &bull; 5 Questions</span>
+              <h5 class="font-serif fw-bold mt-1">All-India GS Rapid Revision #04</h5>
+              <p class="small text-muted">Duration: 05:00 mins &bull; Instant Evaluation</p>
+              <button type="button" class="btn btn-violet btn-sm" data-start-mock="All-India GS Rapid Revision #04">Start Test</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="demoMockTestArea" class="p-4 rounded-4 bg-ivory border d-none">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="font-serif fw-bold mb-0" id="mockActiveTitle">Mock Test</h5>
+            <span class="badge bg-danger fs-6" id="mockTimerDisplay">05:00</span>
+          </div>
+          <div id="mockQuestionsContainer"></div>
+          <button type="button" class="btn btn-gold" id="submitMockTestBtn">Submit &amp; Evaluate</button>
+          <div id="mockResultAlert" class="d-none"></div>
+        </div>
+      </section>
+
+      <!-- 5. TEST RESULTS -->
+      <section class="dash-panel" id="panel-results">
+        <h4 class="font-serif fw-bold mb-3">Previous Test Results</h4>
+        <div class="table-responsive bg-white rounded-4 border p-3">
+          <table class="table align-middle mb-0">
+            <thead><tr><th>Test Name</th><th>Subject</th><th>Score</th><th>Accuracy</th></tr></thead>
+            <tbody>
+              <tr><td>Prelims Sectional #14</td><td>Indian Polity</td><td>118 / 200</td><td><span class="badge bg-indigo">76%</span></td></tr>
+              <tr><td>Prelims Sectional #13</td><td>Indian Economy</td><td>104 / 200</td><td><span class="badge bg-indigo">68%</span></td></tr>
+              <tr><td>Mains GS-II Mini Mock</td><td>Governance</td><td>64 / 100</td><td><span class="badge bg-warning text-dark">64%</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 6. EXAM SCHEDULE -->
+      <section class="dash-panel" id="panel-schedule">
+        <h4 class="font-serif fw-bold mb-3">Upcoming Schedule</h4>
+        <div class="list-group rounded-4">
+          <div class="list-group-item d-flex justify-content-between align-items-center p-3">
+            <div><h6 class="fw-bold mb-0">GS-II Constitutional Bodies Mock Test</h6><small class="text-muted">Sunday &bull; 9:30 AM &ndash; 11:30 AM</small></div>
+            <span class="badge bg-warning text-dark">Offline / Online</span>
+          </div>
+          <div class="list-group-item d-flex justify-content-between align-items-center p-3">
+            <div><h6 class="fw-bold mb-0">Weekly Editorial &amp; Economic Survey Briefing</h6><small class="text-muted">Wednesday &bull; 5:00 PM</small></div>
+            <span class="badge bg-indigo">Live Session</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. MY PROGRESS -->
+      <section class="dash-panel" id="panel-progress">
+        <h4 class="font-serif fw-bold mb-3">Subject-Wise Preparation Progress</h4>
+        <div class="p-4 rounded-4 bg-white border">
+          <div class="mb-3"><div class="d-flex justify-content-between small fw-bold mb-1"><span>Indian Polity &amp; Governance</span><span>82%</span></div><div class="progress"><div class="progress-bar bg-indigo" style="width:82%"></div></div></div>
+          <div class="mb-3"><div class="d-flex justify-content-between small fw-bold mb-1"><span>Indian Economy</span><span>70%</span></div><div class="progress"><div class="progress-bar bg-indigo" style="width:70%"></div></div></div>
+          <div class="mb-3"><div class="d-flex justify-content-between small fw-bold mb-1"><span>Modern History &amp; Culture</span><span>64%</span></div><div class="progress"><div class="progress-bar bg-warning" style="width:64%"></div></div></div>
+          <div><div class="d-flex justify-content-between small fw-bold mb-1"><span>GS-IV Ethics &amp; Integrity</span><span>55%</span></div><div class="progress"><div class="progress-bar bg-warning" style="width:55%"></div></div></div>
+        </div>
+      </section>
+
+      <!-- 8. MY PROFILE -->
+      <section class="dash-panel" id="panel-profile">
+        <h4 class="font-serif fw-bold mb-3">My Profile</h4>
+        <div class="p-4 rounded-4 bg-white border" style="max-width:620px;">
+          <form id="dashProfileForm">
+            <div class="mb-3"><label class="form-label small fw-semibold">Full Name</label><input type="text" class="form-control" id="profName"></div>
+            <div class="mb-3"><label class="form-label small fw-semibold">Email</label><input type="email" class="form-control" id="profEmail"></div>
+            <div class="mb-3"><label class="form-label small fw-semibold">Phone</label><input type="tel" class="form-control" id="profPhone"></div>
+            <div class="mb-3"><label class="form-label small fw-semibold">Enrolled Program</label><input type="text" class="form-control" id="profProgram"></div>
+            <div class="mb-3"><label class="form-label small fw-semibold">Target Exam</label><input type="text" class="form-control" id="profTargetYear"></div>
+            <button type="submit" class="btn btn-violet">Save Profile Changes</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- 9. NOTIFICATIONS -->
+      <section class="dash-panel" id="panel-notifications">
+        <h4 class="font-serif fw-bold mb-3">Notifications</h4>
+        <div class="alert bg-white border border-start border-4 border-primary"><strong>Evaluated Script Ready:</strong> Your GS-II Answer Writing Assignment #09 has been reviewed by Prof. Deshmukh.</div>
+        <div class="alert bg-white border border-start border-4 border-warning"><strong>Reminder:</strong> Sunday Prelims Mock Test #15 opens at 9:30 AM sharp.</div>
+      </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

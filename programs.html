@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses &amp; Programs | Sankalp Civil Services Academy</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top academy-navbar">
+    <div class="container">
+      <a class="navbar-brand brand-lockup" href="index.html">
+        <span class="brand-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2.5L14.5 6.5H9.5L12 2.5Z" fill="currentColor" />
+            <path d="M6.5 8.5H17.5M8 8.5V16M12 8.5V16M16 8.5V16" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" />
+            <path
+              d="M4.5 17.5C7 16.2 9.5 16.2 12 17.5C14.5 16.2 17 16.2 19.5 17.5V20C17 18.8 14.5 18.8 12 20C9.5 18.8 7 18.8 4.5 20V17.5Z"
+              fill="currentColor" />
+          </svg></span>
+        <span><span class="brand-title d-block">Sankalp Academy</span><span class="brand-sub">Civil
+            Services</span></span>
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#academyNavMenu" aria-controls="academyNavMenu" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="academyNavMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Home 1 &mdash; Editorial Classic</a></li>
+              <li><a class="dropdown-item" href="home-2.html">Home 2 &mdash; Campaign Edition</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <button type="button" class="rtl-toggle-btn" id="rtlToggleBtn" aria-label="Switch to RTL layout"><i
+              class="bi bi-arrows"></i></button>
+          <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle color theme"><i
+              class="bi bi-moon-stars-fill"></i></button>
+          <a href="login.html" class="btn btn-gold btn-sm px-4 py-2">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. PROGRAMS HERO -->
+  <header class="inner-hero">
+    <div class="inner-hero-bg" style="background-image: url('assets/images/classroom.jpg');"></div>
+    <div class="container position-relative" style="z-index:2;">
+      <span class="eyebrow eyebrow-gold">Academic Architecture &bull; 2027&ndash;28</span>
+      <h1 class="display-editorial mb-3">Courses &amp; Structured Learning Programs</h1>
+      <p class="lead text-white-50 mb-0" style="max-width:650px;">
+        Six purpose-built pathways covering every stage of the UPSC Civil Services Examination&mdash;from NCERT
+        fundamentals to the Personality Test Board.
+      </p>
+    </div>
+  </header>
+
+  <!-- 2. INTERACTIVE 6-PROGRAM CURRICULUM STUDIO -->
+  <section class="py-5 bg-ivory" id="programStudio">
+    <div class="container py-3">
+      <div class="text-center mx-auto mb-4" style="max-width:700px;">
+        <span class="eyebrow eyebrow-indigo">Curriculum Explorer</span>
+        <h2 class="section-title mb-2">Explore Each Program in Detail</h2>
+        <p class="text-muted mb-0">Select any learning track below to inspect its structure, duration, and deliverables.
+        </p>
+      </div>
+
+      <!-- 6-Program Pill Selector -->
+      <ul class="nav nav-pills justify-content-center gap-2 mb-5" id="progStudioTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-pill px-4 fw-semibold" data-bs-toggle="pill"
+            data-bs-target="#pane-foundation" type="button" role="tab">01. Foundation</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4 fw-semibold" data-bs-toggle="pill" data-bs-target="#pane-prelims"
+            type="button" role="tab">02. Prelims</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4 fw-semibold" data-bs-toggle="pill" data-bs-target="#pane-mains"
+            type="button" role="tab">03. Mains</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4 fw-semibold" data-bs-toggle="pill" data-bs-target="#pane-interview"
+            type="button" role="tab">04. Interview</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4 fw-semibold" data-bs-toggle="pill" data-bs-target="#pane-integrated"
+            type="button" role="tab">05. Integrated GS</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4 fw-semibold" data-bs-toggle="pill" data-bs-target="#pane-ca"
+            type="button" role="tab">06. Current Affairs</button>
+        </li>
+      </ul>
+
+      <div class="tab-content bg-white rounded-4 border shadow-sm p-4 p-lg-5" id="progStudioContent">
+        <!-- 01. Foundation -->
+        <div class="tab-pane fade show active" id="pane-foundation" role="tabpanel">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+              <img src="assets/images/aspirants-study.jpg" alt="UPSC Foundation program"
+                class="rounded-4 w-100 object-fit-cover shadow-sm" style="height:330px;object-position:center 20%;">
+            </div>
+            <div class="col-lg-7">
+              <span class="badge bg-warning text-dark mb-2 px-3 py-2 rounded-pill fw-bold">12 Months &bull; Offline
+                &amp; Live Hybrid</span>
+              <h3 class="font-serif fw-bold mb-2">UPSC Civil Services Foundation</h3>
+              <p class="text-muted mb-4">
+                Complete NCERT-to-Advanced coverage of GS Papers I&ndash;IV, CSAT, Essay workshops, and weekly answer
+                writing evaluation for first-time aspirants.
+              </p>
+              <div class="row g-3 border-top pt-3 mb-4 small">
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>650+ hrs conceptual lectures
+                </div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>NCERT 4-week bridge module
+                </div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>Weekly Prelims &amp; Mains
+                  tests</div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>Dedicated 1-on-1 mentor</div>
+              </div>
+              <a href="register.html" class="btn btn-gold">Enroll in Foundation</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02. Prelims -->
+        <div class="tab-pane fade" id="pane-prelims" role="tabpanel">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+              <img src="assets/images/mock-test-lab.jpg" alt="Prelims CBT test lab"
+                class="rounded-4 w-100 object-fit-cover shadow-sm" style="height:330px;object-position:center 20%;">
+            </div>
+            <div class="col-lg-7">
+              <span class="badge bg-warning text-dark mb-2 px-3 py-2 rounded-pill fw-bold">5 Months &bull; Stage I
+                Intensive</span>
+              <h3 class="font-serif fw-bold mb-2">UPSC Prelims Preparation</h3>
+              <p class="text-muted mb-4">
+                Rapid high-yield consolidation for GS Paper I and CSAT Paper II with 40+ simulated full-length &amp;
+                sectional tests.
+              </p>
+              <div class="row g-3 border-top pt-3 mb-4 small">
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>12-year PYQ
+                  reverse-engineering</div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>Statement-pair elimination
+                  drills</div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>CSAT comprehension &amp;
+                  numeracy</div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>All-India rank diagnostics
+                </div>
+              </div>
+              <a href="register.html" class="btn btn-violet">Join Prelims Intensive</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03. Mains -->
+        <div class="tab-pane fade" id="pane-mains" role="tabpanel">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+              <img src="assets/images/aspirant-notes.jpg" alt="Mains answer writing"
+                class="rounded-4 w-100 object-fit-cover shadow-sm" style="height:330px;object-position:center 18%;">
+            </div>
+            <div class="col-lg-7">
+              <span class="badge bg-warning text-dark mb-2 px-3 py-2 rounded-pill fw-bold">4 Months &bull; Stage II
+                Answer Craft</span>
+              <h3 class="font-serif fw-bold mb-2">UPSC Mains Answer Craft</h3>
+              <p class="text-muted mb-4">
+                Daily 2-question timed writing, GS-IV Ethics case studies, Essay structuring, and 12 full-length
+                evaluated Mains simulations.
+              </p>
+              <div class="row g-3 border-top pt-3 mb-4 small">
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>7-minute question structuring
+                </div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>2nd ARC &amp; SC citation
+                  banks</div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>48-hour copy evaluation</div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>15-min mentor debrief per mock
+                </div>
+              </div>
+              <a href="register.html" class="btn btn-gold">Join Mains Program</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04. Interview -->
+        <div class="tab-pane fade" id="pane-interview" role="tabpanel">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+              <img src="assets/images/interview-preparation.jpg" alt="Personality Test mock board"
+                class="rounded-4 w-100 object-fit-cover shadow-sm" style="height:330px;object-position:center 15%;">
+            </div>
+            <div class="col-lg-7">
+              <span class="badge bg-warning text-dark mb-2 px-3 py-2 rounded-pill fw-bold">Stage III &bull; 275-Mark
+                Personality Test</span>
+              <h3 class="font-serif fw-bold mb-2">Interview Guidance Board</h3>
+              <p class="text-muted mb-4">
+                Customized DAF-I &amp; DAF-II question banks, 1-on-1 current affairs briefings, and 4 mock board panels
+                with retired civil servants.
+              </p>
+              <div class="row g-3 border-top pt-3 mb-4 small">
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>Individual DAF-II profiling
+                </div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>4 full mock board panels</div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>Recorded video posture review
+                </div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>Home-state &amp; hobby briefs
+                </div>
+              </div>
+              <a href="contact.html" class="btn btn-violet">Schedule Mock Board</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 05. Integrated GS -->
+        <div class="tab-pane fade" id="pane-integrated" role="tabpanel">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+              <img src="assets/images/peer-study.jpg" alt="Integrated GS cohort studying together"
+                class="rounded-4 w-100 object-fit-cover shadow-sm" style="height:330px;object-position:center 20%;">
+            </div>
+            <div class="col-lg-7">
+              <span class="badge bg-warning text-dark mb-2 px-3 py-2 rounded-pill fw-bold">18 Months &bull; All-in-One
+                Track</span>
+              <h3 class="font-serif fw-bold mb-2">Integrated GS + Optional Program</h3>
+              <p class="text-muted mb-4">
+                Unified Prelims, Mains, Optional Subject (PSIR, Sociology, Geography, Anthropology), and Test Series
+                with continuous mentor tracking.
+              </p>
+              <div class="row g-3 border-top pt-3 mb-4 small">
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>Complete GS + 1 Optional</div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>Morning &amp; evening batches
+                </div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>40 Prelims + 12 Mains mocks
+                </div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>Interview guidance included
+                </div>
+              </div>
+              <a href="register.html" class="btn btn-gold">Apply for Integrated Track</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 06. Current Affairs -->
+        <div class="tab-pane fade" id="pane-ca" role="tabpanel">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+              <img src="assets/images/current-affairs.jpg" alt="Aspirant reading The Indian Express"
+                class="rounded-4 w-100 object-fit-cover shadow-sm" style="height:330px;object-position:center 18%;">
+            </div>
+            <div class="col-lg-7">
+              <span class="badge bg-warning text-dark mb-2 px-3 py-2 rounded-pill fw-bold">Year-Round &bull; Daily &amp;
+                Weekly</span>
+              <h3 class="font-serif fw-bold mb-2">Current Affairs &amp; All-India Test Series</h3>
+              <p class="text-muted mb-4">
+                Daily newspaper editorial synthesis, monthly PIB &amp; Yojana compendiums, and All-India ranked
+                Prelims/Mains test series.
+              </p>
+              <div class="row g-3 border-top pt-3 mb-4 small">
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>Daily Hindu &amp; IE synthesis
+                </div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>Monthly policy compendiums
+                </div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>Economic Survey &amp; Budget
+                </div>
+                <div class="col-sm-6"><i class="bi bi-check2-circle text-indigo me-2"></i>All-India percentile tracker
+                </div>
+              </div>
+              <a href="register.html" class="btn btn-violet">Join Test Series</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. COMPLETE 6-PROGRAM ARCHITECTURAL INDEX & DURATION MATRIX -->
+  <section class="py-5 bg-white" id="matrix">
+    <div class="container py-3">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-2">
+        <div>
+          <span class="eyebrow eyebrow-indigo">At-a-Glance Comparison</span>
+          <h2 class="section-title mb-0">Program Duration &amp; Batch Matrix</h2>
+        </div>
+        <a href="contact.html" class="small fw-bold text-indigo">Request Fee Structure &rarr;</a>
+      </div>
+
+      <div class="table-responsive bg-ivory rounded-4 border p-3">
+        <table class="table align-middle mb-0">
+          <thead>
+            <tr>
+              <th>Program</th>
+              <th>Duration</th>
+              <th>Core Coverage</th>
+              <th>Mode</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="foundation">
+              <td class="fw-bold">01. UPSC Civil Services Foundation</td>
+              <td>12 Months</td>
+              <td>NCERT Bridge, GS I&ndash;IV, CSAT, Essay</td>
+              <td>Offline / Live Hybrid</td>
+              <td class="text-end"><a href="register.html" class="btn btn-sm btn-violet">Apply</a></td>
+            </tr>
+            <tr id="prelims">
+              <td class="fw-bold">02. Prelims Preparation Intensive</td>
+              <td>5 Months</td>
+              <td>GS Paper I + CSAT + 40 Mocks</td>
+              <td>Offline / Online</td>
+              <td class="text-end"><a href="register.html" class="btn btn-sm btn-violet">Apply</a></td>
+            </tr>
+            <tr id="mains">
+              <td class="fw-bold">03. Mains Answer Craft &amp; Enrichment</td>
+              <td>4 Months</td>
+              <td>Daily Writing + Ethics + 12 Mocks</td>
+              <td>Hybrid</td>
+              <td class="text-end"><a href="register.html" class="btn btn-sm btn-violet">Apply</a></td>
+            </tr>
+            <tr id="interview">
+              <td class="fw-bold">04. Personality Test &amp; Interview Guidance</td>
+              <td>6 Weeks</td>
+              <td>DAF Profiling + 4 Mock Boards</td>
+              <td>New Delhi / Online</td>
+              <td class="text-end"><a href="contact.html" class="btn btn-sm btn-outline-navy-pill">Book</a></td>
+            </tr>
+            <tr id="integrated">
+              <td class="fw-bold">05. Integrated GS + Optional</td>
+              <td>18 Months</td>
+              <td>GS + 1 Optional + Full Test Series</td>
+              <td>Offline / Live Hybrid</td>
+              <td class="text-end"><a href="register.html" class="btn btn-sm btn-violet">Apply</a></td>
+            </tr>
+            <tr id="current-affairs">
+              <td class="fw-bold">06. Current Affairs &amp; Test Series</td>
+              <td>Year-Round</td>
+              <td>Daily Briefs + Monthly Digests + Mocks</td>
+              <td>Online / Hybrid</td>
+              <td class="text-end"><a href="register.html" class="btn btn-sm btn-violet">Apply</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. OPTIONAL SUBJECT TRACKS (INTERACTIVE EXPANDING DOSSIER STRIP) -->
+  <section class="py-5 bg-ivory border-top" id="optional-subjects">
+    <div class="container py-2">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-2">
+        <div>
+          <span class="eyebrow eyebrow-indigo">500-Mark Mains Advantage</span>
+          <h2 class="section-title mb-0">Optional Subject Tracks</h2>
+        </div>
+        <span class="small text-muted"><i class="bi bi-arrows-expand me-1"></i> Hover any subject dossier to
+          expand</span>
+      </div>
+
+      <div class="optional-dossier-strip reveal-on-scroll">
+        <div class="optional-dossier-panel">
+          <span class="dossier-bg-num">01</span>
+          <span class="dossier-code">PSIR</span>
+          <h4 class="font-serif fw-bold mt-2 mb-2">Political Science &amp; IR</h4>
+          <p class="dossier-desc small text-muted mb-3">
+            Political theory, Indian constitution, comparative politics, and India&rsquo;s foreign policy with high
+            GS-II overlap.
+          </p>
+          <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center small">
+            <span class="fw-bold text-indigo">4.5 Months &bull; 10 Tests</span>
+            <a href="faculty.html" class="fw-bold text-indigo">Faculty &rarr;</a>
+          </div>
+        </div>
+
+        <div class="optional-dossier-panel">
+          <span class="dossier-bg-num">02</span>
+          <span class="dossier-code">SOC</span>
+          <h4 class="font-serif fw-bold mt-2 mb-2">Sociology Paper I &amp; II</h4>
+          <p class="dossier-desc small text-muted mb-3">
+            Classical &amp; contemporary thinkers, stratification, and Indian social structure linked directly with GS-I
+            &amp; Essay.
+          </p>
+          <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center small">
+            <span class="fw-bold text-indigo">4 Months &bull; 10 Tests</span>
+            <a href="faculty.html" class="fw-bold text-indigo">Faculty &rarr;</a>
+          </div>
+        </div>
+
+        <div class="optional-dossier-panel">
+          <span class="dossier-bg-num">03</span>
+          <span class="dossier-code">GEO</span>
+          <h4 class="font-serif fw-bold mt-2 mb-2">Geography &amp; Mapping</h4>
+          <p class="dossier-desc small text-muted mb-3">
+            Geomorphology, climatology, regional planning, and Indian geography with intensive map-marking workshops.
+          </p>
+          <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center small">
+            <span class="fw-bold text-indigo">4.5 Months &bull; 10 Tests</span>
+            <a href="faculty.html" class="fw-bold text-indigo">Faculty &rarr;</a>
+          </div>
+        </div>
+
+        <div class="optional-dossier-panel">
+          <span class="dossier-bg-num">04</span>
+          <span class="dossier-code">ANT</span>
+          <h4 class="font-serif fw-bold mt-2 mb-2">Anthropology Paper I &amp; II</h4>
+          <p class="dossier-desc small text-muted mb-3">
+            Biological &amp; socio-cultural anthropology, tribal India, and diagram-rich concise answer frameworks.
+          </p>
+          <div class="mt-auto pt-3 border-top d-flex justify-content-between align-items-center small">
+            <span class="fw-bold text-indigo">4 Months &bull; 10 Tests</span>
+            <a href="faculty.html" class="fw-bold text-indigo">Faculty &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. WEEKLY STUDY & EVALUATION CADENCE (INTERACTIVE DESK PLANNER CALENDAR) -->
+  <section class="py-5 bg-white" id="weekly-cadence">
+    <div class="container py-2">
+      <div class="text-center mx-auto mb-5" style="max-width:680px;">
+        <span class="eyebrow eyebrow-indigo">Weekly Discipline</span>
+        <h2 class="section-title mb-2">Interactive Academic Desk Planner</h2>
+        <p class="text-muted mb-0">Click any day on the planner below to inspect that day&rsquo;s lecture, writing
+          drill, and mentorship schedule.</p>
+      </div>
+
+      <div class="desk-planner-shell reveal-on-scroll">
+        <!-- Left: Spiral-Bound 7-Day Tile Picker -->
+        <div class="desk-planner-left">
+          <div class="desk-planner-rings" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3 pt-2">
+            <span class="small fw-bold text-uppercase text-gold" style="letter-spacing:0.12em;">2027&ndash;28
+              Cohort</span>
+            <span class="small text-white-50">Mon &ndash; Sun</span>
+          </div>
+          <div class="desk-day-grid">
+            <button type="button" class="desk-day-btn active" data-cal-day="MON" data-cal-num="01"
+              data-cal-title="Polity &amp; Constitutional Law"
+              data-cal-morn="9:00 AM &ndash; 11:30 AM &bull; GS-II Core Lecture: Fundamental Rights &amp; Writs"
+              data-cal-aft="2:00 PM &ndash; 4:00 PM &bull; Reading Hall: Laxmikanth + PYQ Synthesis"
+              data-cal-eve="5:00 PM &ndash; 6:00 PM &bull; Timed 2-Question Mains Answer Drill">
+              <small>MON</small><strong>01</strong>
+            </button>
+            <button type="button" class="desk-day-btn" data-cal-day="TUE" data-cal-num="02"
+              data-cal-title="Indian Economy &amp; Budget"
+              data-cal-morn="9:00 AM &ndash; 11:30 AM &bull; GS-III Lecture: Fiscal Policy &amp; RBI MPC"
+              data-cal-aft="2:00 PM &ndash; 4:00 PM &bull; Economic Survey Data &amp; Chart Briefing"
+              data-cal-eve="5:00 PM &ndash; 6:00 PM &bull; Timed 2-Question Data-Citation Drill">
+              <small>TUE</small><strong>02</strong>
+            </button>
+            <button type="button" class="desk-day-btn" data-cal-day="WED" data-cal-num="03"
+              data-cal-title="Editorial &amp; PIB Synthesis"
+              data-cal-morn="9:00 AM &ndash; 11:00 AM &bull; The Hindu &amp; Indian Express Editorial Lab"
+              data-cal-aft="2:00 PM &ndash; 4:00 PM &bull; PIB, Yojana &amp; Parliamentary Committee Digest"
+              data-cal-eve="5:00 PM &ndash; 6:00 PM &bull; 25-MCQ Weekly Current Affairs Drill">
+              <small>WED</small><strong>03</strong>
+            </button>
+            <button type="button" class="desk-day-btn" data-cal-day="THU" data-cal-num="04"
+              data-cal-title="Modern History &amp; Optional"
+              data-cal-morn="9:00 AM &ndash; 11:30 AM &bull; GS-I Lecture: Freedom Struggle &amp; Art Culture"
+              data-cal-aft="2:00 PM &ndash; 4:30 PM &bull; Optional Subject Paper I Seminar"
+              data-cal-eve="5:30 PM &ndash; 6:30 PM &bull; Optional Answer Structuring Workshop">
+              <small>THU</small><strong>04</strong>
+            </button>
+            <button type="button" class="desk-day-btn" data-cal-day="FRI" data-cal-num="05"
+              data-cal-title="Ethics Case Studies &amp; Essay"
+              data-cal-morn="9:00 AM &ndash; 11:30 AM &bull; GS-IV Ethics Thinkers &amp; Administrative Dilemmas"
+              data-cal-aft="2:00 PM &ndash; 4:00 PM &bull; Philosophical Essay Outline Lab"
+              data-cal-eve="5:00 PM &ndash; 6:00 PM &bull; Peer Group Discussion Circle">
+              <small>FRI</small><strong>05</strong>
+            </button>
+            <button type="button" class="desk-day-btn" data-cal-day="SAT" data-cal-num="06"
+              data-cal-title="Simulated Mock Examination"
+              data-cal-morn="9:30 AM &ndash; 11:30 AM &bull; Full Prelims GS + CSAT Simulation (OMR / CBT)"
+              data-cal-aft="2:30 PM &ndash; 4:30 PM &bull; Mains 10-Question Sectional Timed Paper"
+              data-cal-eve="5:00 PM &ndash; 6:00 PM &bull; Instant Answer Key &amp; Elimination Review">
+              <small>SAT</small><strong>06</strong>
+            </button>
+            <button type="button" class="desk-day-btn" data-cal-day="SUN" data-cal-num="07"
+              data-cal-title="1-on-1 Mentor Audit &amp; Reset"
+              data-cal-morn="10:00 AM &ndash; 1:00 PM &bull; 48-Hr Evaluated Mains Script Debrief"
+              data-cal-aft="2:00 PM &ndash; 4:00 PM &bull; Weak-Topic Diagnostic &amp; Revision"
+              data-cal-eve="4:30 PM &ndash; 5:30 PM &bull; Next Week Target Lock with Mentor">
+              <small>SUN</small><strong>07</strong>
+            </button>
+            <div class="desk-day-summary">
+              <small>WEEKLY</small><strong>45h</strong>
+            </div>
+          </div>
+          <div
+            class="mt-4 pt-3 border-top border-light border-opacity-25 d-flex justify-content-between small text-white-50">
+            <span><i class="bi bi-journal-check text-gold me-1"></i>12 Mains Qs / Wk</span>
+            <span><i class="bi bi-stopwatch text-gold me-1"></i>1 Full Mock</span>
+          </div>
+        </div>
+
+        <!-- Right: Ruled Daily Agenda Sheet -->
+        <div class="desk-planner-right">
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 pb-3 mb-3 border-bottom">
+            <div>
+              <span class="badge bg-warning text-dark mb-1" id="calActiveBadge">MONDAY &bull; DAY 01</span>
+              <h3 class="font-serif fw-bold mb-0" id="calActiveTitle">Polity &amp; Constitutional Law</h3>
+            </div>
+            <span class="small text-muted fw-semibold"><i class="bi bi-clock me-1 text-indigo"></i>3 Daily Blocks</span>
+          </div>
+
+          <div class="desk-agenda-slot">
+            <span class="agenda-dot bg-primary"></span>
+            <div>
+              <span class="small fw-bold text-indigo text-uppercase d-block">Morning Session</span>
+              <p class="mb-0 fw-medium" id="calActiveMorn">9:00 AM &ndash; 11:30 AM &bull; GS-II Core Lecture:
+                Fundamental Rights &amp; Writs</p>
+            </div>
+          </div>
+
+          <div class="desk-agenda-slot">
+            <span class="agenda-dot bg-warning"></span>
+            <div>
+              <span class="small fw-bold text-indigo text-uppercase d-block">Afternoon Consolidation</span>
+              <p class="mb-0 fw-medium" id="calActiveAft">2:00 PM &ndash; 4:00 PM &bull; Reading Hall: Laxmikanth + PYQ
+                Synthesis</p>
+            </div>
+          </div>
+
+          <div class="desk-agenda-slot border-bottom-0 pb-0">
+            <span class="agenda-dot bg-warning"></span>
+            <div>
+              <span class="small fw-bold text-indigo text-uppercase d-block">Evening Practice</span>
+              <p class="mb-0 fw-medium" id="calActiveEve">5:00 PM &ndash; 6:00 PM &bull; Timed 2-Question Mains Answer
+                Drill</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. LEARNING METHODOLOGY STRIP -->
+  <section class="py-5 bg-ivory border-top">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="eyebrow eyebrow-indigo">6-Stage Cycle</span>
+        <h2 class="section-title">How Every Program Delivers Results</h2>
+      </div>
+      <div class="method-flow-grid">
+        <div class="method-step">
+          <div class="method-orb">01</div>
+          <h6 class="fw-bold">Syllabus Map</h6>
+          <p class="small text-muted mb-0">PYQ-weighted blueprint</p>
+        </div>
+        <div class="method-step">
+          <div class="method-orb">02</div>
+          <h6 class="fw-bold">Core Clarity</h6>
+          <p class="small text-muted mb-0">First-principles lectures</p>
+        </div>
+        <div class="method-step">
+          <div class="method-orb">03</div>
+          <h6 class="fw-bold">Answer Craft</h6>
+          <p class="small text-muted mb-0">Daily timed writing</p>
+        </div>
+        <div class="method-step">
+          <div class="method-orb">04</div>
+          <h6 class="fw-bold">Mock Tests</h6>
+          <p class="small text-muted mb-0">Exam-hall simulation</p>
+        </div>
+        <div class="method-step">
+          <div class="method-orb">05</div>
+          <h6 class="fw-bold">Gap Analysis</h6>
+          <p class="small text-muted mb-0">1-on-1 mentor review</p>
+        </div>
+        <div class="method-step">
+          <div class="method-orb">06</div>
+          <h6 class="fw-bold">Interview</h6>
+          <p class="small text-muted mb-0">DAF &amp; board poise</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FREQUENTLY ASKED QUESTIONS -->
+  <section class="py-5 bg-white">
+    <div class="container" style="max-width:860px;">
+      <div class="text-center mb-4">
+        <span class="eyebrow eyebrow-indigo">Admissions FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="accordion academy-accordion" id="programsFaq">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Can working professionals join the Integrated GS or Foundation batch?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#programsFaq">
+            <div class="accordion-body text-muted">
+              Yes. We offer evening (6:30 PM &ndash; 9:00 PM) and weekend cohorts with full recorded lecture backups and
+              flexible mentor check-ins.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              How quickly are Mains answer copies evaluated?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#programsFaq">
+            <div class="accordion-body text-muted">
+              All Mains test scripts are evaluated within 48 hours with line-by-line structural comments and a 15-minute
+              1-on-1 mentor review.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              Are NCERT foundational modules included?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#programsFaq">
+            <div class="accordion-body text-muted">
+              Yes. The first four weeks of the Foundation and Integrated batches cover essential NCERT concepts across
+              History, Geography, Polity, and Economy.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5B. SCHOLARSHIPS, INSTALLMENTS & HYBRID FLEXIBILITY -->
+  <section class="py-5 bg-ivory border-top" id="scholarships-aid">
+    <div class="container py-2">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-2">
+        <div>
+          <span class="eyebrow eyebrow-indigo">Admissions Support</span>
+          <h2 class="section-title mb-0">Scholarships, Installments &amp; Batch Flexibility</h2>
+        </div>
+        <a href="contact.html" class="small fw-bold text-indigo">Check Scholarship Eligibility &rarr;</a>
+      </div>
+      <div class="row g-0 border-top border-bottom">
+        <div class="col-md-4 py-4 pe-md-4 border-md-end">
+          <span class="small fw-bold text-indigo text-uppercase">Merit Aid</span>
+          <h5 class="font-serif fw-bold mt-1 mb-2">Up to 100% Fee Waiver</h5>
+          <p class="small text-muted mb-0">Awarded to top performers in the Sankalp National Diagnostic &amp;
+            Scholarship Test.</p>
+        </div>
+        <div class="col-md-4 py-4 px-md-4 border-md-end border-top border-md-top-0">
+          <span class="small fw-bold text-indigo text-uppercase">Flexible Plans</span>
+          <h5 class="font-serif fw-bold mt-1 mb-2">0% Interest Installments</h5>
+          <p class="small text-muted mb-0">Split Foundation and Integrated GS fees across 3 or 6 monthly milestones.</p>
+        </div>
+        <div class="col-md-4 py-4 ps-md-4 border-top border-md-top-0">
+          <span class="small fw-bold text-indigo text-uppercase">Hybrid Switch</span>
+          <h5 class="font-serif fw-bold mt-1 mb-2">Offline &harr; Online Transfer</h5>
+          <p class="small text-muted mb-0">Seamlessly switch between New Delhi classrooms and live online cohorts
+            anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ADMISSION CTA -->
+  <section class="cta-bold-section text-center">
+    <div class="container">
+      <h2 class="section-title mb-3">Ready to Begin Your Preparation?</h2>
+      <p class="text-white-50 mb-4">Speak with an academic counsellor to choose the right batch for your target CSE
+        year.</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="register.html" class="btn btn-gold btn-lg">Apply Now</a>
+        <a href="contact.html" class="btn btn-outline-light-pill btn-lg">Talk to a Counsellor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unified Full Footer -->
+  <footer class="academy-footer">
+    <div class="container">
+      <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
+        <div class="col-lg-4">
+          <div class="brand-lockup mb-3">
+            <span class="brand-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 2.5L14.5 6.5H9.5L12 2.5Z" fill="currentColor" />
+                <path d="M6.5 8.5H17.5M8 8.5V16M12 8.5V16M16 8.5V16" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" />
+                <path
+                  d="M4.5 17.5C7 16.2 9.5 16.2 12 17.5C14.5 16.2 17 16.2 19.5 17.5V20C17 18.8 14.5 18.8 12 20C9.5 18.8 7 18.8 4.5 20V17.5Z"
+                  fill="currentColor" />
+              </svg></span>
+            <span>
+              <span class="brand-title d-block">Sankalp Academy</span>
+              <span class="brand-sub">Civil Services</span>
+            </span>
+          </div>
+          <p class="small text-white-50 mb-3">
+            Dedicated to cultivating ethical, analytical, and resilient civil services aspirants through structured
+            pedagogy and personal mentorship.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-pill" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-pill" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-pill" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-pill" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <a href="index.html" class="footer-link">Home 1</a>
+          <a href="home-2.html" class="footer-link">Home 2</a>
+          <a href="about.html" class="footer-link">About Us</a>
+          <a href="faculty.html" class="footer-link">Faculty</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <div class="col-lg-3 col-6">
+          <h5 class="footer-heading">Programs</h5>
+          <a href="programs.html#foundation" class="footer-link">UPSC Foundation</a>
+          <a href="programs.html#prelims" class="footer-link">Prelims Preparation</a>
+          <a href="programs.html#mains" class="footer-link">Mains Answer Craft</a>
+          <a href="programs.html#interview" class="footer-link">Interview Guidance</a>
+          <a href="dashboard.html" class="footer-link">Aspirant Portal</a>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="footer-heading">Campus &amp; Desk</h5>
+          <p class="small text-white-50 mb-2"><i class="bi bi-geo-alt-fill text-gold me-2"></i>14-B, Old Rajinder Nagar,
+            New Delhi 110060</p>
+          <p class="small text-white-50 mb-2"><i class="bi bi-telephone-fill text-gold me-2"></i>+91 11 4089 2200</p>
+          <p class="small text-white-50 mb-0"><i class="bi bi-clock-fill text-gold me-2"></i>Mon &ndash; Sat: 8:00 AM
+            &ndash; 7:30 PM</p>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 small text-white-50">
+        <span>&copy; 2026 Sankalp Civil Services Academy. All rights reserved.</span>
+        <span>New Delhi &bull; All-India Hybrid</span>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to top"><i
+      class="bi bi-arrow-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

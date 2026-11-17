@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Sankalp Civil Services Academy</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top academy-navbar">
+    <div class="container">
+      <a class="navbar-brand brand-lockup" href="index.html">
+        <span class="brand-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.5L14.5 6.5H9.5L12 2.5Z" fill="currentColor"/><path d="M6.5 8.5H17.5M8 8.5V16M12 8.5V16M16 8.5V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4.5 17.5C7 16.2 9.5 16.2 12 17.5C14.5 16.2 17 16.2 19.5 17.5V20C17 18.8 14.5 18.8 12 20C9.5 18.8 7 18.8 4.5 20V17.5Z" fill="currentColor"/></svg></span>
+        <span><span class="brand-title d-block">Sankalp Academy</span><span class="brand-sub">Civil Services</span></span>
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#academyNavMenu" aria-controls="academyNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="academyNavMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Home 1 &mdash; Editorial Classic</a></li>
+              <li><a class="dropdown-item" href="home-2.html">Home 2 &mdash; Campaign Edition</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <button type="button" class="rtl-toggle-btn" id="rtlToggleBtn" aria-label="Switch to RTL layout"><i class="bi bi-arrows"></i></button>
+          <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle color theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <a href="login.html" class="btn btn-gold btn-sm px-4 py-2">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. PREMIUM PAGE HERO -->
+  <header class="inner-hero">
+    <div class="inner-hero-bg" style="background-image: url('assets/images/academy-building.jpg');"></div>
+    <div class="container position-relative" style="z-index:2;">
+      <span class="eyebrow eyebrow-gold">Institutional Identity</span>
+      <h1 class="display-editorial mb-3">A Decade of Disciplined Civil Services Scholarship</h1>
+      <p class="lead text-white-50" style="max-width:660px;">
+        Founded in 2015, Sankalp Civil Services Academy bridges foundational academic depth with modern exam analytics and personal mentorship.
+      </p>
+    </div>
+  </header>
+
+  <!-- 2. ACADEMY INTRODUCTION & MISSION -->
+  <section class="py-5 bg-white">
+    <div class="container py-4">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 reveal-on-scroll">
+          <span class="eyebrow eyebrow-indigo">Our Mission</span>
+          <h2 class="section-title mb-3">Developing Ethical, Analytical Future Administrators</h2>
+          <p class="text-muted">
+            The Civil Services Examination tests clarity of thought, balanced judgment, and endurance. Our mission is to replace rote coaching with structured, mentor-guided intellectual growth.
+          </p>
+          <p class="text-muted mb-0">
+            Whether an aspirant joins us in Old Rajinder Nagar or through our live hybrid portal, they receive the same disciplined timetable, evaluated answer scripts, and direct faculty access.
+          </p>
+        </div>
+        <div class="col-lg-6 reveal-on-scroll">
+          <img src="assets/images/seminar-hall.jpg" alt="Academy constitutional seminar" class="rounded-4 shadow-lg w-100 object-fit-cover" style="height:360px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. VISION & VALUES (INTERACTIVE TYPOGRAPHIC MANIFESTO — NO 3-CARD ROW) -->
+  <section class="py-5 bg-ivory border-top border-bottom" id="coreValuesSection">
+    <div class="container py-3">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <span class="eyebrow eyebrow-indigo mb-3">Core Values &bull; Click to Inspect</span>
+          <div class="d-flex flex-column">
+            <button type="button" class="values-word-btn active"
+              data-val-num="01" data-val-tag="ETHOS" data-val-title="Intellectual Honesty"
+              data-val-desc="Constructive, unvarnished feedback on every mock answer and Prelims attempt&mdash;never false praise or inflated scores."
+              data-val-pledge="Every Mains script is evaluated against strict UPSC marking rubrics within 48 hours.">
+              <span class="values-word-num">01</span>
+              <span class="values-word-text">Integrity.</span>
+              <i class="bi bi-arrow-right ms-auto"></i>
+            </button>
+            <button type="button" class="values-word-btn"
+              data-val-num="02" data-val-tag="METHOD" data-val-title="Syllabus Discipline"
+              data-val-desc="Zero noise, high-yield synthesis of NCERTs, standard reference texts, and contemporary governance issues."
+              data-val-pledge="100% PYQ-aligned weekly study plans with zero irrelevant filler material.">
+              <span class="values-word-num">02</span>
+              <span class="values-word-text">Clarity.</span>
+              <i class="bi bi-arrow-right ms-auto"></i>
+            </button>
+            <button type="button" class="values-word-btn border-bottom"
+              data-val-num="03" data-val-tag="ACCESS" data-val-title="Inclusive Mentorship"
+              data-val-desc="Equal academic support and 1-on-1 guidance for first-generation aspirants from every state and academic background."
+              data-val-pledge="Dedicated mentor check-ins every fortnight for both classroom and online cohorts.">
+              <span class="values-word-num">03</span>
+              <span class="values-word-text">Perseverance.</span>
+              <i class="bi bi-arrow-right ms-auto"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="p-4 p-lg-5 rounded-4 bg-navy text-white shadow-lg border-top border-4 border-warning">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold" id="valActiveTag">ETHOS</span>
+              <span class="font-serif fs-3 fw-bold text-gold" id="valActiveNum">01</span>
+            </div>
+            <h3 class="font-serif fw-bold text-white mb-3" id="valActiveTitle">Intellectual Honesty</h3>
+            <p class="text-white-50 mb-4" id="valActiveDesc">
+              Constructive, unvarnished feedback on every mock answer and Prelims attempt&mdash;never false praise or inflated scores.
+            </p>
+            <div class="p-3 rounded-3 bg-white bg-opacity-10 border border-light border-opacity-25 small text-white">
+              <i class="bi bi-shield-check text-gold me-2"></i>
+              <span id="valActivePledge">Every Mains script is evaluated against strict UPSC marking rubrics within 48 hours.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. OUR JOURNEY WITH CURVED S-CURVE MILESTONE TIMELINE -->
+  <section class="journey-curve-section" id="ourJourney">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-4">
+        <span class="eyebrow eyebrow-gold">Institutional Milestones</span>
+        <h2 class="section-title mb-3">Our Journey</h2>
+        <p class="text-white-50 mx-auto" style="max-width:620px;">
+          From a focused mentorship room in 2015 to a nationwide civil services learning ecosystem. Click any milestone along the curve to inspect our evolution.
+        </p>
+      </div>
+
+      <!-- Desktop Curved S-Curve SVG Timeline -->
+      <div class="journey-curve-desktop d-none d-lg-block">
+        <svg class="journey-svg-canvas" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="journeyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#F4B942" />
+              <stop offset="35%" stop-color="#7138E8" />
+              <stop offset="70%" stop-color="#1769D2" />
+              <stop offset="100%" stop-color="#F4B942" />
+            </linearGradient>
+          </defs>
+          <path class="journey-path-bg" d="M 90 180 C 175 180, 175 320, 260 320 C 345 320, 345 180, 430 180 C 515 180, 515 320, 600 320 C 685 320, 685 180, 770 180 C 855 180, 855 320, 940 320 C 1025 320, 1025 180, 1110 180" />
+          <path class="journey-path-active" d="M 90 180 C 175 180, 175 320, 260 320 C 345 320, 345 180, 430 180 C 515 180, 515 320, 600 320 C 685 320, 685 180, 770 180 C 855 180, 855 320, 940 320 C 1025 320, 1025 180, 1110 180" />
+        </svg>
+
+        <!-- 7 Interactive Milestone Nodes (Peaks = pos-top, Valleys = pos-bottom) -->
+        <div class="journey-node pos-top active" style="left: 7.5%; top: 36%;" tabindex="0"
+             data-year="2015" data-title="The Beginning"
+             data-desc="Started with a 35-aspirant seminar room in New Delhi dedicated to analytical GS teaching and daily newspaper synthesis.">
+          <div class="journey-node-card">
+            <div class="journey-year">2015</div>
+            <div class="journey-node-title">The Beginning</div>
+          </div>
+          <div class="journey-node-dot"><i class="bi bi-compass-fill"></i></div>
+        </div>
+
+        <div class="journey-node pos-bottom" style="left: 21.67%; top: 64%;" tabindex="0"
+             data-year="2017" data-title="Foundation of Our Academy"
+             data-desc="Established full-time campus classrooms, dedicated reference library, and structured Prelims-Mains test evaluation.">
+          <div class="journey-node-dot"><i class="bi bi-building-fill"></i></div>
+          <div class="journey-node-card">
+            <div class="journey-year">2017</div>
+            <div class="journey-node-title">Foundation of Our Academy</div>
+          </div>
+        </div>
+
+        <div class="journey-node pos-top" style="left: 35.83%; top: 36%;" tabindex="0"
+             data-year="2019" data-title="Growing Mentorship Community"
+             data-desc="Launched 1-on-1 Mains Answer Writing Mentorship and peer-review circles across GS Papers I&ndash;IV.">
+          <div class="journey-node-card">
+            <div class="journey-year">2019</div>
+            <div class="journey-node-title">Growing Mentorship Community</div>
+          </div>
+          <div class="journey-node-dot"><i class="bi bi-people-fill"></i></div>
+        </div>
+
+        <div class="journey-node pos-bottom" style="left: 50%; top: 64%;" tabindex="0"
+             data-year="2021" data-title="Expanding Academic Programs"
+             data-desc="Introduced Integrated GS Foundation, Ethics Case Study Labs, and Optional Subject mentorship.">
+          <div class="journey-node-dot"><i class="bi bi-journal-richtext"></i></div>
+          <div class="journey-node-card">
+            <div class="journey-year">2021</div>
+            <div class="journey-node-title">Expanding Our Programs</div>
+          </div>
+        </div>
+
+        <div class="journey-node pos-top" style="left: 64.17%; top: 36%;" tabindex="0"
+             data-year="2023" data-title="Strengthening Learning Approach"
+             data-desc="Integrated diagnostic performance analytics to pinpoint Prelims accuracy gaps and Mains structural depth.">
+          <div class="journey-node-card">
+            <div class="journey-year">2023</div>
+            <div class="journey-node-title">Strengthening Our Approach</div>
+          </div>
+          <div class="journey-node-dot"><i class="bi bi-graph-up-arrow"></i></div>
+        </div>
+
+        <div class="journey-node pos-bottom" style="left: 78.33%; top: 64%;" tabindex="0"
+             data-year="2024" data-title="Digital Learning &amp; Support"
+             data-desc="Rolled out hybrid live classrooms, searchable digital study repositories, and nationwide mock test portals.">
+          <div class="journey-node-dot"><i class="bi bi-laptop-fill"></i></div>
+          <div class="journey-node-card">
+            <div class="journey-year">2024</div>
+            <div class="journey-node-title">Digital Learning Support</div>
+          </div>
+        </div>
+
+        <div class="journey-node pos-top" style="left: 92.5%; top: 36%;" tabindex="0"
+             data-year="2026" data-title="Aiming for Greater Excellence"
+             data-desc="Advancing AI-assisted diagnostic feedback alongside human mentorship for the next generation of public leaders.">
+          <div class="journey-node-card">
+            <div class="journey-year">2026</div>
+            <div class="journey-node-title">Aiming for Excellence</div>
+          </div>
+          <div class="journey-node-dot"><i class="bi bi-stars"></i></div>
+        </div>
+      </div>
+
+      <!-- Active Milestone Spotlight Bar (Desktop) -->
+      <div class="journey-spotlight-bar d-none d-lg-flex align-items-center justify-content-between gap-4">
+        <div class="d-flex align-items-center gap-3">
+          <span class="badge bg-warning text-dark fs-5 font-serif px-3 py-2" id="journeySpotYear">2015</span>
+          <div>
+            <h4 class="font-serif fw-bold mb-1" id="journeySpotTitle">The Beginning</h4>
+            <p class="small text-white-50 mb-0" id="journeySpotDesc">
+              Started with a 35-aspirant seminar room in New Delhi dedicated to analytical GS teaching and daily newspaper synthesis.
+            </p>
+          </div>
+        </div>
+        <span class="small text-gold text-nowrap"><i class="bi bi-hand-index-thumb me-1"></i> Select any node</span>
+      </div>
+
+      <!-- Mobile Vertical Winding Timeline -->
+      <div class="journey-mobile-vertical d-lg-none">
+        <div class="journey-mobile-step"><span class="journey-year">2015</span><h5 class="fw-bold mt-1">The Beginning</h5><p class="small text-white-50 mb-0">Inaugural 35-aspirant seminar cohort in New Delhi.</p></div>
+        <div class="journey-mobile-step"><span class="journey-year">2017</span><h5 class="fw-bold mt-1">Foundation of Our Academy</h5><p class="small text-white-50 mb-0">Dedicated classrooms, reference library &amp; evaluation cell.</p></div>
+        <div class="journey-mobile-step"><span class="journey-year">2019</span><h5 class="fw-bold mt-1">Growing Mentorship Community</h5><p class="small text-white-50 mb-0">1-on-1 Mains answer writing mentorship launched.</p></div>
+        <div class="journey-mobile-step"><span class="journey-year">2021</span><h5 class="fw-bold mt-1">Expanding Academic Programs</h5><p class="small text-white-50 mb-0">Integrated GS, Optional &amp; Ethics Case Study Labs.</p></div>
+        <div class="journey-mobile-step"><span class="journey-year">2023</span><h5 class="fw-bold mt-1">Strengthening Our Learning Approach</h5><p class="small text-white-50 mb-0">Diagnostic performance analytics across Prelims &amp; Mains.</p></div>
+        <div class="journey-mobile-step"><span class="journey-year">2024</span><h5 class="fw-bold mt-1">Digital Learning &amp; Support</h5><p class="small text-white-50 mb-0">Hybrid live classes &amp; online mock test diagnostics.</p></div>
+        <div class="journey-mobile-step"><span class="journey-year">2026</span><h5 class="fw-bold mt-1">Aiming for Greater Excellence</h5><p class="small text-white-50 mb-0">Nationwide mentorship &amp; analytical feedback platform.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 & 6. ACADEMIC PHILOSOPHY & TEACHING METHODOLOGY (4-STAGE LEARNING LOOP) -->
+  <section class="py-5 bg-ivory border-top border-bottom">
+    <div class="container py-3">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5">
+          <span class="eyebrow eyebrow-indigo">Academic Philosophy</span>
+          <h2 class="section-title mb-3">First Principles Over Shortcuts</h2>
+          <p class="text-muted mb-0">
+            UPSC rewards candidates who understand why a constitutional provision or economic policy exists. Our lectures trace every topic from historical roots to contemporary administrative challenges.
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <div class="mentorship-rail">
+            <div class="mentorship-rail-item">
+              <div class="mentorship-rail-icon"><i class="bi bi-book-half"></i></div>
+              <div>
+                <span class="small fw-bold text-indigo text-uppercase">Step 01 &bull; Learn</span>
+                <h5 class="font-serif fw-bold mt-1 mb-1">Conceptual Foundation</h5>
+                <p class="small text-muted mb-0">Interactive lectures linking static NCERTs and standard texts to current policy debates.</p>
+              </div>
+            </div>
+            <div class="mentorship-rail-item">
+              <div class="mentorship-rail-icon"><i class="bi bi-pencil-square"></i></div>
+              <div>
+                <span class="small fw-bold text-indigo text-uppercase">Step 02 &bull; Write</span>
+                <h5 class="font-serif fw-bold mt-1 mb-1">Active Recall &amp; Answer Craft</h5>
+                <p class="small text-muted mb-0">Every class concludes with a 150-word Mains prompt or 10 Prelims MCQs under timed conditions.</p>
+              </div>
+            </div>
+            <div class="mentorship-rail-item">
+              <div class="mentorship-rail-icon"><i class="bi bi-check2-all"></i></div>
+              <div>
+                <span class="small fw-bold text-indigo text-uppercase">Step 03 &bull; Evaluate &amp; Refine</span>
+                <h5 class="font-serif fw-bold mt-1 mb-1">48-Hour Mentor Debrief</h5>
+                <p class="small text-muted mb-0">Line-by-line evaluation and 1-on-1 feedback loops to close structural and factual gaps.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 & 8. FACULTY CULTURE & LEARNING ENVIRONMENT (HOVER-EXPAND GALLERY) -->
+  <section class="py-5 bg-white">
+    <div class="container py-3">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3">
+        <div>
+          <span class="eyebrow eyebrow-indigo">Mentorship Culture</span>
+          <h2 class="section-title mb-0">A Campus Built for Quiet Concentration</h2>
+        </div>
+        <a href="faculty.html" class="btn btn-violet btn-sm">Meet Our Faculty</a>
+      </div>
+
+      <div class="spaces-expand-strip reveal-on-scroll">
+        <div class="space-expand-panel">
+          <img src="assets/images/reading-hall.jpg" alt="Quiet wooden reading hall">
+          <div class="space-expand-overlay">
+            <span class="badge bg-warning text-dark align-self-start mb-2">7 AM &ndash; 10 PM</span>
+            <h5 class="font-serif fw-bold mb-0">Quiet Reading Hall</h5>
+          </div>
+        </div>
+        <div class="space-expand-panel">
+          <img src="assets/images/digital-hall.jpg" alt="Modern digital study lounge">
+          <div class="space-expand-overlay">
+            <span class="badge bg-warning text-dark align-self-start mb-2">Hybrid Access</span>
+            <h5 class="font-serif fw-bold mb-0">Digital Study Lounge</h5>
+          </div>
+        </div>
+        <div class="space-expand-panel">
+          <img src="assets/images/library.jpg" alt="Reference library">
+          <div class="space-expand-overlay">
+            <span class="badge bg-light text-dark align-self-start mb-2">Curated Archives</span>
+            <h5 class="font-serif fw-bold mb-0">Reference Library</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8B. INSTITUTIONAL TRANSPARENCY & ACADEMIC CHARTER (SEAL PLAQUE + 2x2 MATRIX) -->
+  <section class="py-5 bg-ivory border-top" id="academic-charter">
+    <div class="container py-3">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-4">
+          <div class="p-4 p-lg-5 rounded-4 bg-navy text-white h-100 d-flex flex-column justify-content-between border-top border-4 border-warning shadow-lg">
+            <div>
+              <div class="d-inline-grid mb-3 rounded-circle bg-warning text-dark" style="width:52px;height:52px;place-items:center;font-size:1.4rem;">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <span class="eyebrow eyebrow-gold d-block mb-2" style="width:fit-content;">Academic Governance</span>
+              <h2 class="section-title text-white mb-3">Our Aspirant Transparency Charter</h2>
+              <p class="small text-white-50 mb-0">
+                Four published institutional commitments that every cohort can hold our academic leadership accountable to.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-top border-light border-opacity-25 small text-gold fw-semibold">
+              <i class="bi bi-patch-check-fill me-2"></i>Published Standards &bull; 2027&ndash;28
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="row g-3 h-100">
+            <div class="col-sm-6">
+              <div class="p-4 rounded-4 bg-white border shadow-sm h-100">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div class="font-serif fs-2 fw-bold text-indigo">35&ndash;60</div>
+                  <span class="engine-icon-pill"><i class="bi bi-people-fill"></i></span>
+                </div>
+                <h6 class="fw-bold mb-1">Capped Batch Size</h6>
+                <p class="small text-muted mb-0">Strict classroom caps so faculty know every aspirant by name and strength.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-4 rounded-4 bg-white border shadow-sm h-100">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div class="font-serif fs-2 fw-bold text-indigo">48 Hrs</div>
+                  <span class="engine-icon-pill"><i class="bi bi-clock-history"></i></span>
+                </div>
+                <h6 class="fw-bold mb-1">Evaluation SLA</h6>
+                <p class="small text-muted mb-0">Guaranteed script return with rubric scoring and improvement notes.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-4 rounded-4 bg-white border shadow-sm h-100">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div class="font-serif fs-2 fw-bold text-indigo">100%</div>
+                  <span class="engine-icon-pill"><i class="bi bi-mortarboard-fill"></i></span>
+                </div>
+                <h6 class="fw-bold mb-1">Verified Faculty Hours</h6>
+                <p class="small text-muted mb-0">Core GS modules taught directly by senior subject scholars, never delegated.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-4 rounded-4 bg-white border shadow-sm h-100">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <div class="font-serif fs-2 fw-bold text-indigo">Zero</div>
+                  <span class="engine-icon-pill"><i class="bi bi-award-fill"></i></span>
+                </div>
+                <h6 class="fw-bold mb-1">Unverified Claims</h6>
+                <p class="small text-muted mb-0">Transparent reporting of batch outcomes and honest diagnostic counselling.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. ASPIRANT-FOCUSED CTA -->
+  <section class="cta-bold-section text-center">
+    <div class="container">
+      <h2 class="section-title mb-3">Experience a Live Orientation Session</h2>
+      <p class="text-white-50 mb-4">Visit our campus or attend an online mentorship briefing before enrolling.</p>
+      <a href="contact.html" class="btn btn-gold btn-lg">Book Orientation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+    <footer class="academy-footer">
+    <div class="container">
+      <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
+        <div class="col-lg-4">
+          <div class="brand-lockup mb-3">
+            <span class="brand-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.5L14.5 6.5H9.5L12 2.5Z" fill="currentColor"/><path d="M6.5 8.5H17.5M8 8.5V16M12 8.5V16M16 8.5V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4.5 17.5C7 16.2 9.5 16.2 12 17.5C14.5 16.2 17 16.2 19.5 17.5V20C17 18.8 14.5 18.8 12 20C9.5 18.8 7 18.8 4.5 20V17.5Z" fill="currentColor"/></svg></span>
+            <span>
+              <span class="brand-title d-block">Sankalp Academy</span>
+              <span class="brand-sub">Civil Services</span>
+            </span>
+          </div>
+          <p class="small text-white-50 mb-3">
+            Dedicated to cultivating ethical, analytical, and resilient civil services aspirants through structured pedagogy and personal mentorship.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-pill" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-pill" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-pill" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-pill" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <a href="index.html" class="footer-link">Home 1</a>
+          <a href="home-2.html" class="footer-link">Home 2</a>
+          <a href="about.html" class="footer-link">About Us</a>
+          <a href="faculty.html" class="footer-link">Faculty</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <div class="col-lg-3 col-6">
+          <h5 class="footer-heading">Programs</h5>
+          <a href="programs.html#foundation" class="footer-link">UPSC Foundation</a>
+          <a href="programs.html#prelims" class="footer-link">Prelims Preparation</a>
+          <a href="programs.html#mains" class="footer-link">Mains Answer Craft</a>
+          <a href="programs.html#interview" class="footer-link">Interview Guidance</a>
+          <a href="dashboard.html" class="footer-link">Aspirant Portal</a>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="footer-heading">Campus &amp; Desk</h5>
+          <p class="small text-white-50 mb-2"><i class="bi bi-geo-alt-fill text-gold me-2"></i>14-B, Old Rajinder Nagar, New Delhi 110060</p>
+          <p class="small text-white-50 mb-2"><i class="bi bi-telephone-fill text-gold me-2"></i>+91 11 4089 2200</p>
+          <p class="small text-white-50 mb-0"><i class="bi bi-clock-fill text-gold me-2"></i>Mon &ndash; Sat: 8:00 AM &ndash; 7:30 PM</p>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 small text-white-50">
+        <span>&copy; 2026 Sankalp Civil Services Academy. All rights reserved.</span>
+        <span>New Delhi &bull; All-India Hybrid</span>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

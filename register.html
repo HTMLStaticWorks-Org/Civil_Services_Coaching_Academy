@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aspirant Registration | Sankalp Civil Services Academy</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Floating Theme & RTL Controls -->
+  <div class="auth-float-controls">
+    <button type="button" class="auth-float-btn" id="themeToggleBtn" aria-label="Toggle dark mode"><i class="bi bi-moon-stars-fill"></i></button>
+    <button type="button" class="auth-float-btn" id="rtlToggleBtn" aria-label="Switch to RTL layout"><i class="bi bi-arrows"></i></button>
+  </div>
+
+  <main class="auth-portal-page">
+    <div class="auth-portal-card">
+      <div class="text-center mb-4">
+        <a class="navbar-brand brand-lockup" href="index.html">
+          <span class="brand-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.5L14.5 6.5H9.5L12 2.5Z" fill="currentColor"/><path d="M6.5 8.5H17.5M8 8.5V16M12 8.5V16M16 8.5V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4.5 17.5C7 16.2 9.5 16.2 12 17.5C14.5 16.2 17 16.2 19.5 17.5V20C17 18.8 14.5 18.8 12 20C9.5 18.8 7 18.8 4.5 20V17.5Z" fill="currentColor"/></svg></span>
+          <span>
+            <span class="brand-title d-block">Sankalp Academy</span>
+            <span class="brand-sub">Civil Services</span>
+          </span>
+        </a>
+        <h1 class="font-serif">Create Aspirant Account</h1>
+        <p class="small text-muted mb-0">Set up your Sankalp Civil Services aspirant portal.</p>
+      </div>
+
+      <form id="aspirantRegisterForm" novalidate>
+        <div class="mb-3">
+          <label for="regName" class="form-label small">Full Name <span class="text-danger">*</span></label>
+          <input type="text" class="form-control auth-portal-input" id="regName" placeholder="Aarav Kulkarni" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="regEmail" class="form-label small">Email Address <span class="text-danger">*</span></label>
+          <input type="email" class="form-control auth-portal-input" id="regEmail" placeholder="aspirant@example.com" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="regPhone" class="form-label small">Mobile Number <span class="text-danger">*</span></label>
+          <input type="tel" class="form-control auth-portal-input" id="regPhone" placeholder="+91 98XXXXXXXX" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="regProgram" class="form-label small">Program Selection <span class="text-danger">*</span></label>
+          <select class="form-select auth-portal-input" id="regProgram" required>
+            <option value="">Choose program...</option>
+            <option value="UPSC Civil Services Foundation">UPSC Civil Services Foundation</option>
+            <option value="Integrated GS + Optional">Integrated GS + Optional</option>
+            <option value="UPSC Prelims Preparation">UPSC Prelims Preparation</option>
+            <option value="UPSC Mains Answer Craft">UPSC Mains Answer Craft</option>
+            <option value="Interview Guidance Board">Interview Guidance Board</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="regPassword" class="form-label small">Password <span class="text-danger">*</span></label>
+          <div class="auth-pass-wrap">
+            <input type="password" class="form-control auth-portal-input" id="regPassword" placeholder="Minimum 6 characters" required>
+            <button class="auth-pass-toggle" type="button" data-toggle-password="regPassword" aria-label="Show password">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="regConfirmPassword" class="form-label small">Confirm Password <span class="text-danger">*</span></label>
+          <div class="auth-pass-wrap">
+            <input type="password" class="form-control auth-portal-input" id="regConfirmPassword" placeholder="Re-enter password" required>
+            <button class="auth-pass-toggle" type="button" data-toggle-password="regConfirmPassword" aria-label="Show confirm password">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="checkbox" id="regTerms" required>
+          <label class="form-check-label small text-muted" for="regTerms">
+            I agree to the <a href="about.html" class="auth-portal-link">Academic Code of Conduct</a> and <a href="programs.html" class="auth-portal-link">Admissions Terms</a>.
+          </label>
+        </div>
+
+        <div id="registerFeedback" class="d-none mb-3"></div>
+
+        <button type="submit" class="auth-portal-submit">Create Aspirant Account</button>
+
+        <div class="auth-divider">OR</div>
+
+        <div class="row g-2 mb-4">
+          <div class="col-6">
+            <button type="button" class="auth-social-btn" onclick="window.location.href='dashboard.html';">
+              <i class="bi bi-google text-danger"></i> Google
+            </button>
+          </div>
+          <div class="col-6">
+            <button type="button" class="auth-social-btn" onclick="window.location.href='dashboard.html';">
+              <i class="bi bi-apple"></i> Apple
+            </button>
+          </div>
+        </div>
+
+        <p class="text-center small text-muted mb-0">
+          Already have an account? <a href="login.html" class="auth-portal-link">Sign In</a>
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

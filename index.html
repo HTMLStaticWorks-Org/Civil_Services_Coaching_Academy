@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sankalp Civil Services Academy | Prepare with Purpose. Lead with Impact.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <meta name="description" content="Sankalp Civil Services Academy &mdash; Premier UPSC CSE coaching, structured mentorship, answer-writing mastery, and interview guidance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top academy-navbar">
+    <div class="container">
+      <a class="navbar-brand brand-lockup" href="index.html">
+        <span class="brand-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.5L14.5 6.5H9.5L12 2.5Z" fill="currentColor"/><path d="M6.5 8.5H17.5M8 8.5V16M12 8.5V16M16 8.5V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4.5 17.5C7 16.2 9.5 16.2 12 17.5C14.5 16.2 17 16.2 19.5 17.5V20C17 18.8 14.5 18.8 12 20C9.5 18.8 7 18.8 4.5 20V17.5Z" fill="currentColor"/></svg></span>
+        <span>
+          <span class="brand-title d-block">Sankalp Academy</span>
+          <span class="brand-sub">Civil Services</span>
+        </span>
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#academyNavMenu" aria-controls="academyNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="academyNavMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="index.html">Home 1 &mdash; Editorial Classic</a></li>
+              <li><a class="dropdown-item" href="home-2.html">Home 2 &mdash; Campaign Edition</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <button type="button" class="rtl-toggle-btn" id="rtlToggleBtn" aria-label="Switch to RTL layout"><i class="bi bi-arrows"></i></button>
+          <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle color theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <a href="login.html" class="btn btn-gold btn-sm px-4 py-2">Login</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: HERO &mdash; CURVED DIAGONAL RIGHT-PHOTO COMPOSITION -->
+  <header class="hero-split-curved">
+    <!-- Desktop Right-Side Full-Height Photograph (58% width) -->
+    <div class="hero-curved-photo-wrap d-none d-lg-block">
+      <img src="assets/images/hero-main.jpg" alt="UPSC Civil Services aspirant studying in classroom" class="hero-curved-photo">
+      <div class="hero-photo-tint"></div>
+    </div>
+
+    <!-- Curved Diagonal Mask + Champagne-Gold Edge (Desktop) -->
+    <svg class="hero-curve-mask d-none d-lg-block" viewBox="0 0 1440 820" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="champagneEdge" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#F5B52E" stop-opacity="0.95" />
+          <stop offset="50%" stop-color="#FFE08A" stop-opacity="0.9" />
+          <stop offset="100%" stop-color="#F5B52E" stop-opacity="0.65" />
+        </linearGradient>
+        <linearGradient id="goldWaveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#F5B52E" stop-opacity="0.55" />
+          <stop offset="60%" stop-color="#FFE08A" stop-opacity="0.28" />
+          <stop offset="100%" stop-color="#10213F" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+      <!-- Deep Navy Left Area with Large Curved Diagonal Cut -->
+      <path d="M 0 0 L 840 0 Q 600 390, 820 820 L 0 820 Z" fill="#10213F" />
+      <!-- Thin Champagne-Gold Border Along Curved Edge -->
+      <path d="M 840 0 Q 600 390, 820 820" fill="none" stroke="url(#champagneEdge)" stroke-width="3.5" />
+      <!-- Luminous Champagne-Gold Bottom-Left Ribbon Accent -->
+      <path d="M 0 765 Q 240 738, 490 820 L 0 820 Z" fill="url(#goldWaveGrad)" />
+    </svg>
+
+    <div class="container hero-content position-relative" style="z-index:3;">
+      <div class="row align-items-end g-4">
+        <!-- Left Content Column -->
+        <div class="col-lg-6">
+          <div class="hero-badge-strip">
+            <span class="hero-badge-dot"></span>
+            <span>Admissions Open &bull; UPSC CSE 2027 Foundation &amp; Integrated Batches</span>
+          </div>
+          <h1 class="display-editorial text-white mb-3">
+            Prepare with<br>
+            <span style="color:#F5B52E;">Purpose.</span><br>
+            Lead with Impact.
+          </h1>
+          <p class="lead text-white-50 mb-4" style="max-width: 490px;">
+            An institution built on intellectual rigour, disciplined daily answer writing, and direct mentorship from seasoned civil services educators.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="programs.html" class="btn btn-gold btn-lg">
+              Explore Programs <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+            <a href="register.html" class="btn btn-outline-light-pill btn-lg">
+              Begin Your Journey
+            </a>
+          </div>
+
+          <!-- Four Feature Highlights -->
+          <div class="hero-highlights-row">
+            <div class="hero-highlight-item">
+              <i class="bi bi-mortarboard text-gold"></i>
+              <span>Expert Faculty</span>
+            </div>
+            <div class="hero-highlight-item">
+              <i class="bi bi-layers text-gold"></i>
+              <span>Structured Programs</span>
+            </div>
+            <div class="hero-highlight-item">
+              <i class="bi bi-people text-gold"></i>
+              <span>Personalized Mentorship</span>
+            </div>
+            <div class="hero-highlight-item">
+              <i class="bi bi-graph-up-arrow text-gold"></i>
+              <span>Proven Results</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile/Tablet Photo Preview (Visible below 992px) -->
+        <div class="col-12 d-lg-none">
+          <div class="rounded-4 overflow-hidden border border-warning border-2 shadow-lg">
+            <img src="assets/images/hero-main.jpg" alt="UPSC Civil Services aspirant studying in classroom" class="w-100 object-fit-cover" style="height:260px;object-position:center 20%;">
+          </div>
+        </div>
+
+        <!-- Bottom-Right Floating Academic Benchmark Panel -->
+        <div class="col-lg-6 d-flex justify-content-lg-end">
+          <div class="hero-benchmark-card">
+            <div class="hero-benchmark-years">
+              <i class="bi bi-award-fill text-gold d-block fs-4 mb-1"></i>
+              <span class="font-serif fs-3 fw-bold text-white lh-1 d-block">11+</span>
+              <span class="small text-white-50">Years</span>
+            </div>
+            <div class="hero-benchmark-copy">
+              <div class="fw-bold text-gold small text-uppercase mb-1" style="letter-spacing:0.08em;">Academic Benchmark</div>
+              <p class="small text-white-50 mb-0">
+                Of structured prelims, mains &amp; personality test mentorship in New Delhi &amp; online across India.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 2: ACADEMIC EXCELLENCE AT A GLANCE -->
+  <section class="stats-editorial-band">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-3 col-sm-6">
+          <div class="stat-monolith gold-accent reveal-on-scroll">
+            <div class="stat-giant-num" data-countup="11" data-suffix="+">0</div>
+            <div class="stat-label">Years of Academic Excellence</div>
+            <p class="small text-muted mb-0 mt-1">Consistent pedagogy since 2015</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="stat-monolith indigo-accent reveal-on-scroll">
+            <div class="stat-giant-num" data-countup="18500" data-suffix="+">0</div>
+            <div class="stat-label">Aspirants Mentored</div>
+            <p class="small text-muted mb-0 mt-1">Classroom &amp; live digital cohorts</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="stat-monolith cobalt-accent reveal-on-scroll">
+            <div class="stat-giant-num" data-countup="420" data-suffix="+">0</div>
+            <div class="stat-label">Successful Candidates</div>
+            <p class="small text-muted mb-0 mt-1">Across UPSC CSE cohorts</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="stat-monolith reveal-on-scroll">
+            <div class="stat-giant-num" data-countup="48" data-suffix="">0</div>
+            <div class="stat-label">Expert Faculty Members</div>
+            <p class="small text-muted mb-0 mt-1">Subject scholars &amp; mentors</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: ABOUT THE ACADEMY (OVERLAPPING EDITORIAL COMPOSITION) -->
+  <section class="about-editorial-section">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-7 reveal-on-scroll">
+          <div class="about-overlap-frame">
+            <div class="about-main-photo">
+              <img src="assets/images/academy-building.jpg" alt="Sankalp Civil Services Academy main campus building">
+            </div>
+            <div class="about-floating-manifesto">
+              <span class="eyebrow eyebrow-gold mb-2">Institutional Ethos</span>
+              <h3 class="font-serif fw-bold mb-2">Where Administrative Temperament Is Forged</h3>
+              <p class="small text-white-50 mb-0">
+                Clearing the Civil Services Examination is not about memorizing volume&mdash;it is about cultivating clarity of thought, ethical judgment, and analytical precision under pressure.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 reveal-on-scroll">
+          <span class="eyebrow eyebrow-indigo">About the Academy</span>
+          <h2 class="section-title mb-4">Built for Serious Aspirants Who Value Depth</h2>
+          <div class="pillar-list-item">
+            <span class="pillar-num">01</span>
+            <div>
+              <h5 class="fw-bold mb-1">Our Philosophy</h5>
+              <p class="small text-muted mb-0">Conceptual mastery before memorization&mdash;connecting static Polity, Economy, and History with dynamic governance issues.</p>
+            </div>
+          </div>
+          <div class="pillar-list-item">
+            <span class="pillar-num">02</span>
+            <div>
+              <h5 class="fw-bold mb-1">Academic Discipline</h5>
+              <p class="small text-muted mb-0">Structured daily reading plans, timed answer-writing drills, and weekly diagnostic reviews keep preparation on track.</p>
+            </div>
+          </div>
+          <div class="pillar-list-item">
+            <span class="pillar-num">03</span>
+            <div>
+              <h5 class="fw-bold mb-1">Mentorship Approach</h5>
+              <p class="small text-muted mb-0">Small-cohort 1-on-1 mentorship ensures every aspirant receives line-by-line feedback on Mains copies and DAF strategy.</p>
+            </div>
+          </div>
+          <div class="mt-4">
+            <a href="about.html" class="btn btn-violet">
+              Discover Our Story <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: OUR PROGRAMS (ASYMMETRICAL EDITORIAL MOSAIC) -->
+  <section class="programs-mosaic-section">
+    <div class="container">
+      <div class="row align-items-end mb-5">
+        <div class="col-lg-7">
+          <span class="eyebrow eyebrow-indigo">Learning Pathways</span>
+          <h2 class="section-title mb-0">Curated Programs for Every Stage of UPSC CSE</h2>
+        </div>
+        <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
+          <a href="programs.html" class="btn btn-outline-navy-pill">Compare All Programs</a>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-4">
+        <!-- Large Left Feature -->
+        <div class="col-lg-7 reveal-on-scroll">
+          <div class="program-feature-banner h-100">
+            <img src="assets/images/aspirants-study.jpg" alt="Indian UPSC aspirant studying in library">
+            <div class="program-feature-overlay">
+              <span class="badge bg-warning text-dark mb-2 px-3 py-2 rounded-pill fw-bold">Flagship &bull; 12 Months</span>
+              <h3 class="font-serif fw-bold">UPSC Civil Services Foundation</h3>
+              <p class="text-white-50 mb-3">
+                Comprehensive NCERT-to-Advanced coverage of GS Papers I&ndash;IV, CSAT, Essay, and Weekly Answer Writing with dedicated mentor allocation.
+              </p>
+              <a href="programs.html#foundation" class="btn btn-gold btn-sm">View Curriculum <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stacked Horizontal Strips Right -->
+        <div class="col-lg-5 d-flex flex-column gap-3 reveal-on-scroll">
+          <div class="program-strip-item">
+            <img src="assets/images/classroom.jpg" alt="UPSC Prelims classroom session" class="program-strip-thumb">
+            <div>
+              <span class="small text-violet fw-bold text-uppercase">Stage I &bull; Objective Mastery</span>
+              <h5 class="font-serif fw-bold mb-1">UPSC Prelims Preparation</h5>
+              <p class="small text-muted mb-2">GS + CSAT intensive with 40+ simulated full-length &amp; sectional tests.</p>
+              <a href="programs.html#prelims" class="small fw-bold text-indigo">Explore Prelims &rarr;</a>
+            </div>
+          </div>
+
+          <div class="program-strip-item">
+            <img src="assets/images/aspirant-notes.jpg" alt="UPSC Mains answer writing preparation" class="program-strip-thumb">
+            <div>
+              <span class="small text-indigo fw-bold text-uppercase">Stage II &bull; Answer Craft</span>
+              <h5 class="font-serif fw-bold mb-1">UPSC Mains Preparation</h5>
+              <p class="small text-muted mb-2">Daily 150/250-word answer evaluation, Ethics case studies &amp; Essay labs.</p>
+              <a href="programs.html#mains" class="small fw-bold text-indigo">Explore Mains &rarr;</a>
+            </div>
+          </div>
+
+          <div class="program-strip-item">
+            <img src="assets/images/interview-preparation.jpg" alt="UPSC Personality Test mock interview" class="program-strip-thumb">
+            <div>
+              <span class="small text-gold fw-bold text-uppercase" style="color:#B47B08!important;">Stage III &bull; Personality Test</span>
+              <h5 class="font-serif fw-bold mb-1">Interview Guidance</h5>
+              <p class="small text-muted mb-2">DAF-specific board panels, recorded video reviews &amp; administrative situational drills.</p>
+              <a href="programs.html#interview" class="small fw-bold text-indigo">Explore Interview &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full-Width Dual Highlight Band -->
+      <div class="program-band-wide p-4 p-lg-5 reveal-on-scroll">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6 border-end border-secondary border-opacity-25 pe-lg-4">
+            <span class="eyebrow eyebrow-gold mb-2">All-in-One Track</span>
+            <h4 class="font-serif fw-bold mb-2">Integrated GS Preparation</h4>
+            <p class="small text-white-50 mb-3">
+              Seamless 18-month Prelims-cum-Mains-cum-Interview architecture for college graduates and working professionals.
+            </p>
+            <a href="programs.html#integrated" class="text-gold fw-semibold small">Read Syllabus Breakdown <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+          <div class="col-lg-6 ps-lg-4">
+            <div class="d-flex flex-column flex-sm-row gap-3 align-items-sm-center">
+              <img src="assets/images/current-affairs.jpg" alt="Aspirant reading The Indian Express for Current Affairs" class="rounded-3" style="width:130px;height:95px;object-fit:cover;">
+              <div>
+                <span class="eyebrow eyebrow-light mb-1">Daily &amp; Weekly</span>
+                <h4 class="font-serif fw-bold mb-1">Current Affairs &amp; Test Series</h4>
+                <p class="small text-white-50 mb-2">Editorial analysis, PIB/Yojana briefs &amp; All-India Ranking test simulations.</p>
+                <a href="programs.html#current-affairs" class="text-gold fw-semibold small">Join Test Series <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: OUR LEARNING METHODOLOGY (6-STAGE FLOWING CONDUIT) -->
+  <section class="methodology-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="eyebrow eyebrow-indigo">6-Stage Pedagogy</span>
+        <h2 class="section-title">A Disciplined System From Syllabus to Selection</h2>
+      </div>
+      <div class="method-flow-grid reveal-on-scroll">
+        <div class="method-step">
+          <div class="method-orb">01</div>
+          <h6 class="fw-bold">Understand the Syllabus</h6>
+          <p class="small text-muted">Micro-topic deconstruction &amp; PYQ trend mapping.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-orb">02</div>
+          <h6 class="fw-bold">Build Conceptual Clarity</h6>
+          <p class="small text-muted">Interactive lectures linking NCERTs to core texts.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-orb">03</div>
+          <h6 class="fw-bold">Practice Answer Writing</h6>
+          <p class="small text-muted">Daily timed writing with line-by-line evaluation.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-orb">04</div>
+          <h6 class="fw-bold">Take Regular Mock Tests</h6>
+          <p class="small text-muted">UPSC-calibrated Prelims &amp; Mains simulations.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-orb">05</div>
+          <h6 class="fw-bold">Analyse Performance</h6>
+          <p class="small text-muted">1-on-1 mentor review of accuracy &amp; time pacing.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-orb">06</div>
+          <h6 class="fw-bold">Prepare for Interview</h6>
+          <p class="small text-muted">DAF profiling &amp; mock board confidence drills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: MEET OUR FACULTY (ASYMMETRIC EDITORIAL SPREAD) -->
+  <section class="faculty-showcase-section">
+    <div class="container">
+      <div class="row align-items-end mb-5">
+        <div class="col-lg-8">
+          <span class="eyebrow eyebrow-indigo">Academic Leadership</span>
+          <h2 class="section-title mb-0">Scholars &amp; Mentors Who Shape Thinkers</h2>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+          <a href="faculty.html" class="btn btn-violet">View Full Faculty Directory</a>
+        </div>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- Tall Featured Director Spotlight (Left) -->
+        <div class="col-lg-5 reveal-on-scroll">
+          <article class="faculty-director-spotlight h-100">
+            <img src="assets/images/faculty-1.jpg" alt="Prof. Arvind Deshmukh teaching Indian Constitution" class="faculty-director-img">
+            <div class="faculty-director-overlay">
+              <span class="badge bg-warning text-dark align-self-start mb-2 px-3 py-2 rounded-pill fw-bold">Academic Director &bull; 14+ Yrs</span>
+              <h3 class="font-serif fw-bold mb-1">Prof. Arvind Deshmukh</h3>
+              <p class="small text-gold fw-semibold text-uppercase mb-2">Indian Polity, Constitution &amp; GS-II</p>
+              <p class="small text-white-50 mb-3">
+                &ldquo;Constitutional literacy turns average answers into authoritative administrative arguments.&rdquo;
+              </p>
+              <a href="faculty.html#faculty-arvind" class="btn btn-gold btn-sm align-self-start">
+                View Profile <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Asymmetric Right Column: 1 Horizontal Feature + 2 Contrasting Tiles -->
+        <div class="col-lg-7 d-flex flex-column gap-4">
+          <!-- Top Horizontal Editorial Band -->
+          <article class="faculty-horizontal-band reveal-on-scroll">
+            <div class="row g-0 align-items-center">
+              <div class="col-sm-5">
+                <img src="assets/images/faculty-2.jpg" alt="Dr. Meera Iyer portrait" class="faculty-horiz-img">
+              </div>
+              <div class="col-sm-7 p-4">
+                <span class="small text-gold fw-bold text-uppercase">Ethics &amp; Public Admin</span>
+                <h4 class="font-serif fw-bold text-white mt-1 mb-2">Dr. Meera Iyer</h4>
+                <p class="small text-white-50 mb-3">
+                  12+ Yrs Experience &bull; Ph.D. Public Policy. Specializes in GS-IV philosophical thinkers, administrative case studies, and high-scoring essays.
+                </p>
+                <a href="faculty.html#faculty-meera" class="btn btn-outline-light-pill btn-sm">View Profile</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bottom Asymmetric Split -->
+          <div class="row g-4 flex-grow-1">
+            <div class="col-md-6 reveal-on-scroll">
+              <article class="faculty-arch-tile h-100">
+                <div class="faculty-arch-frame">
+                  <img src="assets/images/faculty-3.jpg" alt="Prof. Siddharth Nair teaching Sociology">
+                </div>
+                <div class="pt-3">
+                  <span class="small text-violet fw-bold text-uppercase">Society &amp; Sociology</span>
+                  <h5 class="font-serif fw-bold mt-1 mb-1">Prof. Siddharth Nair</h5>
+                  <p class="small text-muted mb-3">10+ Yrs &bull; GS-I &amp; Sociology Optional</p>
+                  <a href="faculty.html#faculty-siddharth" class="small fw-bold text-indigo">View Profile &rarr;</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 reveal-on-scroll">
+              <article class="faculty-cobalt-tile h-100">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <img src="assets/images/mentorship.jpg" alt="Dr. Raghavendra Rao mentoring aspirant" class="faculty-round-avatar">
+                  <div>
+                    <span class="small text-gold fw-bold text-uppercase d-block">Indian Economy</span>
+                    <h5 class="font-serif fw-bold text-white mb-0">Dr. Raghavendra Rao</h5>
+                  </div>
+                </div>
+                <p class="small text-white-50 mb-3">
+                  15+ Yrs Experience &bull; Leads Macroeconomics, Union Budget, Economic Survey &amp; GS-III Infrastructure modules.
+                </p>
+                <a href="faculty.html#faculty-raghav" class="btn btn-gold btn-sm mt-auto align-self-start">View Profile</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: OUR ACHIEVERS (ASYMMETRICAL FEATURE + SUPPORTING) -->
+  <section class="achievers-section">
+    <div class="container">
+      <div class="row align-items-end mb-5">
+        <div class="col-lg-8">
+          <span class="eyebrow eyebrow-gold">Achiever Showcase</span>
+          <h2 class="section-title mb-1">Stories of Consistency &amp; Character</h2>
+          <p class="small text-white-50 mb-0">Dedicated aspirants who turned disciplined daily preparation into public service success.</p>
+        </div>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-7 reveal-on-scroll">
+          <div class="achiever-featured-panel h-100">
+            <div class="row g-0 h-100">
+              <div class="col-md-5">
+                <img src="assets/images/achievers-ceremony.jpg" alt="Achievers honoured at annual convocation" class="achiever-featured-img">
+              </div>
+              <div class="col-md-7 p-4 p-lg-5 d-flex flex-column justify-content-center">
+                <span class="badge bg-warning text-dark align-self-start mb-3">CSE 2025 Cohort</span>
+                <h3 class="font-serif fw-bold mb-2">Ananya Sharma</h3>
+                <p class="text-gold small fw-semibold mb-3">Foundation + Mains Answer Writing Mentee &bull; Year 2025</p>
+                <blockquote class="fst-italic text-white-50 mb-0">
+                  "Daily 20-minute answer reviews transformed how I structured GS-II and Ethics responses. My mentor's feedback kept me grounded through every mock cycle."
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 d-flex flex-column gap-3 reveal-on-scroll">
+          <div class="achiever-row-card">
+            <img src="assets/images/achievers-stage.jpg" alt="Candidate receiving award on stage" class="achiever-avatar">
+            <div>
+              <span class="small text-gold fw-bold">UPSC CSE 2025</span>
+              <h5 class="font-serif fw-bold mb-1">Rohan Verma</h5>
+              <p class="small text-white-50 mb-0">"Structured Prelims test analysis helped me raise my accuracy from 58% to 82%."</p>
+            </div>
+          </div>
+
+          <div class="achiever-row-card">
+            <img src="assets/images/library-focus.jpg" alt="Aspirant studying in library" class="achiever-avatar">
+            <div>
+              <span class="small text-gold fw-bold">Interview Mentee &bull; 2024</span>
+              <h5 class="font-serif fw-bold mb-1">Kavya Menon</h5>
+              <p class="small text-white-50 mb-0">"Three mock boards gave me calm composure and balanced administrative perspective."</p>
+            </div>
+          </div>
+
+          <div class="achiever-row-card">
+            <img src="assets/images/library-lamp.jpg" alt="Male aspirant in library" class="achiever-avatar">
+            <div>
+              <span class="small text-gold fw-bold">GS Scholar &bull; 2024</span>
+              <h5 class="font-serif fw-bold mb-1">Devansh Tiwari</h5>
+              <p class="small text-white-50 mb-0">"The library environment and peer group kept my daily 9-hour study discipline intact."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: CAMPUS & LEARNING ENVIRONMENT (BENTO COLLAGE + LIGHTBOX) -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3">
+        <div>
+          <span class="eyebrow eyebrow-indigo">Campus Life</span>
+          <h2 class="section-title mb-0">Spaces Designed for Deep Focus</h2>
+        </div>
+        <p class="small text-muted mb-0"><i class="bi bi-zoom-in me-1"></i> Click any photograph to open lightbox view</p>
+      </div>
+
+      <div class="bento-gallery reveal-on-scroll">
+        <div class="bento-item bento-a" data-lightbox-src="assets/images/library.jpg" data-lightbox-caption="Sunlit Main Reference Library">
+          <img src="assets/images/library.jpg" alt="Main reference library interior">
+          <div class="bento-caption">
+            <span class="fw-semibold">Main Reference Library</span>
+            <i class="bi bi-arrows-fullscreen"></i>
+          </div>
+        </div>
+        <div class="bento-item bento-b" data-lightbox-src="assets/images/group-discussion.jpg" data-lightbox-caption="Peer Group Discussion Circle">
+          <img src="assets/images/group-discussion.jpg" alt="Aspirants in group discussion">
+          <div class="bento-caption">
+            <span class="fw-semibold">Group Discussion</span>
+            <i class="bi bi-arrows-fullscreen"></i>
+          </div>
+        </div>
+        <div class="bento-item bento-c" data-lightbox-src="assets/images/reading-hall.jpg" data-lightbox-caption="Quiet Reading Hall">
+          <img src="assets/images/reading-hall.jpg" alt="Quiet wooden reading hall">
+          <div class="bento-caption">
+            <span class="fw-semibold">Reading Hall</span>
+            <i class="bi bi-arrows-fullscreen"></i>
+          </div>
+        </div>
+        <div class="bento-item bento-d" data-lightbox-src="assets/images/digital-hall.jpg" data-lightbox-caption="Hybrid Digital Study Lounge">
+          <img src="assets/images/digital-hall.jpg" alt="Modern digital study lounge">
+          <div class="bento-caption">
+            <span class="fw-semibold">Digital Lounge</span>
+            <i class="bi bi-arrows-fullscreen"></i>
+          </div>
+        </div>
+        <div class="bento-item bento-e" data-lightbox-src="assets/images/seminar-hall.jpg" data-lightbox-caption="Constitutional Polity Seminar">
+          <img src="assets/images/seminar-hall.jpg" alt="Polity seminar hall">
+          <div class="bento-caption">
+            <span class="fw-semibold">Polity Seminar</span>
+            <i class="bi bi-arrows-fullscreen"></i>
+          </div>
+        </div>
+        <div class="bento-item bento-f" data-lightbox-src="assets/images/late-night-study.jpg" data-lightbox-caption="Evening Study & Map Synthesis">
+          <img src="assets/images/late-night-study.jpg" alt="Aspirants studying together in the evening">
+          <div class="bento-caption">
+            <span class="fw-semibold">Evening Study Group</span>
+            <i class="bi bi-arrows-fullscreen"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: ASPIRANT TESTIMONIALS SLIDER -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-4">
+          <span class="eyebrow eyebrow-gold">Aspirant Voices</span>
+          <h2 class="section-title mb-3">What Our Learners Say</h2>
+          <p class="small text-white-50 mb-4">Reflections from our Foundation, Test Series, and Interview cohorts.</p>
+          <div class="d-flex align-items-center gap-3">
+            <button type="button" class="btn btn-outline-light-pill btn-sm px-3" id="testimonialPrev" aria-label="Previous testimonial">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <span class="small fw-bold text-gold" id="testimonialCounter">01 / 03</span>
+            <button type="button" class="btn btn-outline-light-pill btn-sm px-3" id="testimonialNext" aria-label="Next testimonial">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="testimonial-slide active">
+            <div class="testimonial-quote-mark">&ldquo;</div>
+            <p class="font-serif fs-3 lh-base mb-4">
+              Before joining Sankalp, I struggled to connect current affairs with static GS concepts. Their weekly editorial synthesis and mentor reviews cut my revision time in half.
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <img src="assets/images/home-study.jpg" alt="Priya Nair" class="testimonial-avatar">
+              <div>
+                <div class="fw-bold">Priya Nair </div>
+                <div class="small text-gold">Integrated GS Batch &bull; New Delhi</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-quote-mark">&ldquo;</div>
+            <p class="font-serif fs-3 lh-base mb-4">
+              The Prelims Test Series is calibrated to actual UPSC unpredictability&mdash;elimination logic, statement-pair questions, and detailed post-test diagnostics.
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <img src="assets/images/mock-test-lab.jpg" alt="Harshvardhan Joshi" class="testimonial-avatar">
+              <div>
+                <div class="fw-bold">Harshvardhan Joshi </div>
+                <div class="small text-gold">Prelims Intensive &bull; Online Cohort</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-quote-mark">&ldquo;</div>
+            <p class="font-serif fs-3 lh-base mb-4">
+              Our faculty treat every aspirant with seriousness and dignity. Even in a 100-student hall, your answer sheet is read with individual care.
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <img src="assets/images/peer-study.jpg" alt="Neha Deshpande" class="testimonial-avatar">
+              <div>
+                <div class="fw-bold">Neha Deshpande </div>
+                <div class="small text-gold">Mains Answer Craft &bull; Pune</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10B: DAILY EDITORIAL & POLICY DIGEST -->
+  <section class="py-5 bg-ivory border-top" id="daily-editorial">
+    <div class="container py-2">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-2">
+        <div>
+          <span class="eyebrow eyebrow-indigo">Daily UPSC Brief</span>
+          <h2 class="section-title mb-0">Today&rsquo;s Editorial &amp; Policy Synthesis</h2>
+        </div>
+        <a href="dashboard.html" class="small fw-bold text-indigo">Open Full Archive in Portal &rarr;</a>
+      </div>
+      <div class="border-top">
+        <div class="row g-3 align-items-center py-3 border-bottom">
+          <div class="col-md-2 small fw-bold text-indigo">GS-II &bull; POLITY</div>
+          <div class="col-md-6"><h6 class="font-serif fw-bold mb-0">Cooperative Federalism &amp; Finance Commission Devolution</h6></div>
+          <div class="col-md-2 small text-muted">6 min read</div>
+          <div class="col-md-2 text-md-end"><span class="badge bg-white text-dark border">The Hindu Brief</span></div>
+        </div>
+        <div class="row g-3 align-items-center py-3 border-bottom">
+          <div class="col-md-2 small fw-bold text-indigo">GS-III &bull; ECONOMY</div>
+          <div class="col-md-6"><h6 class="font-serif fw-bold mb-0">RBI Monetary Policy Stance &amp; Core Inflation Dynamics</h6></div>
+          <div class="col-md-2 small text-muted">5 min read</div>
+          <div class="col-md-2 text-md-end"><span class="badge bg-white text-dark border">Indian Express</span></div>
+        </div>
+        <div class="row g-3 align-items-center py-3 border-bottom">
+          <div class="col-md-2 small fw-bold text-indigo">GS-III &bull; ENVIRONMENT</div>
+          <div class="col-md-6"><h6 class="font-serif fw-bold mb-0">India&rsquo;s Green Hydrogen Mission &amp; Grid Storage Targets</h6></div>
+          <div class="col-md-2 small text-muted">4 min read</div>
+          <div class="col-md-2 text-md-end"><span class="badge bg-white text-dark border">PIB Digest</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 11: FINAL ADMISSION CTA -->
+  <section class="cta-bold-section text-center">
+    <div class="container">
+      <span class="eyebrow eyebrow-gold mb-3">2027&ndash;28 Admissions</span>
+      <h2 class="display-editorial mb-3">Your Civil Services Journey Starts Here.</h2>
+      <p class="lead text-white-50 mx-auto mb-4" style="max-width:650px;">
+        Speak with an academic counsellor to map your optional subject, Prelims-Mains timeline, and batch schedule.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+        <a href="register.html" class="btn btn-gold btn-lg">Apply Now</a>
+        <a href="contact.html" class="btn btn-outline-light-pill btn-lg">Speak to an Academic Counsellor</a>
+      </div>
+      <div class="small text-white-50">
+        <i class="bi bi-telephone-fill text-gold me-2"></i> +91 11 4089 2200 &nbsp;|&nbsp;
+        <i class="bi bi-envelope-fill text-gold me-2"></i> admissions@sankalpias.edu.in
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 12: FOOTER -->
+  <footer class="academy-footer">
+    <div class="container">
+      <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
+        <div class="col-lg-4">
+          <div class="brand-lockup mb-3">
+            <span class="brand-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.5L14.5 6.5H9.5L12 2.5Z" fill="currentColor"/><path d="M6.5 8.5H17.5M8 8.5V16M12 8.5V16M16 8.5V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4.5 17.5C7 16.2 9.5 16.2 12 17.5C14.5 16.2 17 16.2 19.5 17.5V20C17 18.8 14.5 18.8 12 20C9.5 18.8 7 18.8 4.5 20V17.5Z" fill="currentColor"/></svg></span>
+            <span>
+              <span class="brand-title d-block">Sankalp Academy</span>
+              <span class="brand-sub">Civil Services</span>
+            </span>
+          </div>
+          <p class="small text-white-50 mb-3">
+            Dedicated to cultivating ethical, analytical, and resilient civil services aspirants through structured pedagogy and personal mentorship.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-pill" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-pill" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-pill" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-pill" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <a href="index.html" class="footer-link">Home 1</a>
+          <a href="home-2.html" class="footer-link">Home 2</a>
+          <a href="about.html" class="footer-link">About Us</a>
+          <a href="faculty.html" class="footer-link">Faculty</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+        <div class="col-lg-3 col-6">
+          <h5 class="footer-heading">Programs</h5>
+          <a href="programs.html#foundation" class="footer-link">UPSC Foundation</a>
+          <a href="programs.html#prelims" class="footer-link">Prelims Preparation</a>
+          <a href="programs.html#mains" class="footer-link">Mains Answer Craft</a>
+          <a href="programs.html#interview" class="footer-link">Interview Guidance</a>
+          <a href="dashboard.html" class="footer-link">Aspirant Portal</a>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="footer-heading">Campus &amp; Desk</h5>
+          <p class="small text-white-50 mb-2"><i class="bi bi-geo-alt-fill text-gold me-2"></i>14-B, Old Rajinder Nagar, New Delhi 110060</p>
+          <p class="small text-white-50 mb-2"><i class="bi bi-telephone-fill text-gold me-2"></i>+91 11 4089 2200</p>
+          <p class="small text-white-50 mb-0"><i class="bi bi-clock-fill text-gold me-2"></i>Mon &ndash; Sat: 8:00 AM &ndash; 7:30 PM</p>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 small text-white-50">
+        <span>&copy; 2026 Sankalp Civil Services Academy. All rights reserved.</span>
+        <span>New Delhi &bull; All-India Hybrid</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-backdrop" id="academyLightbox" role="dialog" aria-modal="true" aria-label="Campus image preview">
+    <div class="lightbox-content">
+      <button type="button" class="btn btn-gold btn-sm position-absolute top-0 end-0 m-2" id="lightboxClose" aria-label="Close lightbox">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <img src="" alt="" id="lightboxImg">
+      <p class="text-white mt-3 fw-medium" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
