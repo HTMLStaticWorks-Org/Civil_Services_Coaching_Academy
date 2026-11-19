@@ -2099,7 +2099,18 @@ img.rounded-circle.object-fit-cover {
   flex-direction: column;
   justify-content: flex-end;
   color: #FFFFFF;
-  background: linear-gradient(0deg, rgba(9, 16, 38, 0.92) 0%, rgba(16, 27, 61, 0.35) 55%, transparent 100%);
+  background: linear-gradient(0deg, rgba(9, 16, 38, 0.96) 0%, rgba(9, 16, 38, 0.78) 52%, rgba(16, 27, 61, 0.18) 100%);
+}
+
+.space-expand-overlay h4 {
+  color: #FFFFFF;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.space-expand-overlay p,
+.space-expand-overlay .text-white-50 {
+  color: rgba(248, 245, 239, 0.92) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
 }
 
 @media (max-width: 767.98px) {
@@ -2673,6 +2684,71 @@ img.rounded-circle.object-fit-cover {
   background-color: var(--navy) !important;
   color: var(--ink) !important;
   border-color: var(--border-subtle) !important;
+}
+
+/* Dark Mode Overrides for Blue / Indigo / Violet / Navy Text & Accents */
+[data-theme="dark"] .text-indigo {
+  color: #A5B4FC !important;
+}
+
+[data-theme="dark"] .text-violet {
+  color: #C4B5FD !important;
+}
+
+[data-theme="dark"] .text-cobalt {
+  color: #60A5FA !important;
+}
+
+[data-theme="dark"] .text-navy {
+  color: #E2E8F0 !important;
+}
+
+[data-theme="dark"] .eyebrow-indigo {
+  background: rgba(165, 180, 252, 0.14);
+  color: #A5B4FC;
+  border-color: rgba(165, 180, 252, 0.34);
+}
+
+[data-theme="dark"] .pillar-num,
+[data-theme="dark"] .summit-elevation {
+  color: #C4B5FD;
+}
+
+[data-theme="dark"] .method-orb,
+[data-theme="dark"] .engine-orbit-node {
+  border-color: #A5B4FC;
+  color: #A5B4FC;
+}
+
+[data-theme="dark"] .summit-stair-badge:not(.bg-warning) {
+  background: rgba(165, 180, 252, 0.14);
+  color: #A5B4FC;
+}
+
+[data-theme="dark"] .academy-accordion .accordion-button:not(.collapsed) {
+  background: linear-gradient(135deg, rgba(165, 180, 252, 0.14), rgba(196, 181, 253, 0.14));
+  color: #A5B4FC;
+}
+
+[data-theme="dark"] .accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+[data-theme="dark"] .values-word-num {
+  color: #A5B4FC;
+}
+
+[data-theme="dark"] .bg-ivory.text-dark,
+[data-theme="dark"] .bg-white.text-dark {
+  color: var(--ink) !important;
+  border-color: var(--border-subtle) !important;
+}
+
+[data-theme="dark"] .badge.bg-ivory,
+[data-theme="dark"] .badge.bg-white {
+  background-color: rgba(165, 180, 252, 0.12) !important;
+  color: var(--ink) !important;
+  border-color: rgba(165, 180, 252, 0.28) !important;
 }
 
 .nav-pills .nav-link {
